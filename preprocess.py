@@ -40,19 +40,19 @@ if __name__ == '__main__':
     log_main = 'open_stack'
     tau = 0.5
 
-    # parser = spell.LogParser(
-    #     indir=input_dir,
-    #     outdir=output_dir,
-    #     log_format=log_format,
-    #     logmain=log_main,
-    #     tau=tau,
-    # )
+    parser = spell.LogParser(
+        indir=input_dir,
+        outdir=output_dir,
+        log_format=log_format,
+        logmain=log_main,
+        tau=tau,
+    )
 
-    # if not os.path.exists(output_dir):
-    #     os.makedirs(output_dir)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-    # for log_name in ['openstack_abnormal.log', 'openstack_normal2.log', 'openstack_normal1.log']:
-    #     parser.parse(log_name)
+    for log_name in ['openstack_abnormal.log', 'openstack_normal2.log', 'openstack_normal1.log']:
+        parser.parse(log_name)
 
     ##################
     # Transformation #
