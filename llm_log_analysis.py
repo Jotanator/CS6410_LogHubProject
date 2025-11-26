@@ -109,7 +109,7 @@ def gpt_oss20b_test(log_text: str, pipe):
 
     outputs = pipe(
         messages,
-        max_new_tokens=512,
+        max_new_tokens=1024,
     )
     return outputs[0]["generated_text"][-1]
 
@@ -171,7 +171,11 @@ def process_csv(
             }
 
             # One JSON per line → easy to pipe to a file or jq
-            print(json.dumps(output, ensure_ascii=False))
+            # print(json.dumps(output, ensure_ascii=False))
+
+            if i % 50 == 0:
+                with open("output.json", "w", encoding="utf-8") as f:
+                    json.dump(output, f, ensure_ascii=False, indent=2)
 
 
 # -----------------------------
