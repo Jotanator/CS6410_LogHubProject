@@ -79,16 +79,7 @@ def call_llm_on_log(
 
     return data
 
-def gpt_oss20b_test(log_text: str):
-    model_id = "openai/gpt-oss-20b"
-
-    pipe = pipeline(
-        "text-generation",
-        model=model_id,
-        torch_dtype="auto",
-        device_map="auto",
-    )
-
+def gpt_oss20b_test(log_text: str, pipe):
     messages = [
         {
             "role": "system",
@@ -144,6 +135,15 @@ def process_csv(
         "llm_result": {...}
       }
     """
+    if "gpt-oss-20b" == model:
+        model_id = "openai/gpt-oss-20b"
+        pipe = pipeline(
+            "text-generation",
+            model=model_id,
+            torch_dtype="auto",
+            device_map="auto",
+        )
+
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
 
@@ -161,17 +161,17 @@ def process_csv(
             else:
                 log_text = ",".join(row)
 
-            llm_result = gpt_oss20b_test(log_text)
-            print(llm_result)
-            # output = {
-            #     "row_index": i,
-            #     "original_row": row,
-            #     "log_text": log_text,
-            #     "llm_result": llm_result,
-            # }
+            llm_result = gpt_oss20b_test(log_text, pipe)
+
+            output = {
+                "row_index": i,
+                "original_row": row,
+                "log_text": log_text,
+                "llm_result": llm_result,
+            }
 
             # One JSON per line → easy to pipe to a file or jq
-            # print(json.dumps(output, ensure_ascii=False))
+            print(json.dumps(output, ensure_ascii=False))
 
 
 # -----------------------------
