@@ -86,14 +86,14 @@ def gpt_oss20b_test(log_text: str, pipe):
             "content": (
                 "You are a log analysis assistant. "
                 "Given a single log line, you must detect whether it indicates "
-                "an error, failure, or abnormal behavior. "
+                "an error or failure with the system you may ignore any formatting errors in the logs"
                 "If there is no error, say so explicitly."
             ),
         },
         {
             "role": "user",
             "content": (
-                "Analyze the following log entry and detect ANY errors or abnormal behavior.\n\n"
+                "Analyze the following log entry and detect ANY errors or abnormal behavior, keep the answers short and simple.\n\n"
                 "Log entry:\n"
                 "```log\n"
                 f"{log_text}\n"
@@ -101,7 +101,6 @@ def gpt_oss20b_test(log_text: str, pipe):
                 "Respond ONLY with a JSON object with the following keys:\n"
                 "  - \"has_error\": true or false\n"
                 "  - \"error_type\": short string label (e.g., \"network\", \"configuration\", \"none\", etc.)\n"
-                "  - \"severity\": one of [\"info\", \"warning\", \"error\", \"critical\"]\n"
                 "  - \"explanation\": short natural language explanation\n"
             ),
         },
@@ -143,7 +142,24 @@ def process_csv(
             torch_dtype="auto",
             device_map="auto",
         )
-
+    elif model == "gpt-oss-120b":
+        model_id = "openai/gpt-oss-120b"
+        pipe = pipeline(
+            "text-generation",
+            model=model_id,
+            torch_dtype="auto",
+            device_map="auto",
+        )
+    elif model == "deepseek-3.1-7b-instruct":
+        model_id = "deepseek-ai/DeepSeek-V3-7B-Instruct"
+        pipe = pipeline(
+            "text-generation",
+            model=model_id,
+            torch_dtype="auto",
+            device_map="auto",
+        )
+            
+    results = []
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
 
@@ -170,12 +186,13 @@ def process_csv(
                 "llm_result": llm_result,
             }
 
-            # One JSON per line → easy to pipe to a file or jq
-            # print(json.dumps(output, ensure_ascii=False))
+            results.append(output)
 
+            # Every 50 iterations, save all accumulated results
             if i % 50 == 0:
                 with open("output.json", "w", encoding="utf-8") as f:
-                    json.dump(output, f, ensure_ascii=False, indent=2)
+                    json.dump(results, f, ensure_ascii=False, indent=2)
+
 
 
 # -----------------------------
