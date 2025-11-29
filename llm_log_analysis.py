@@ -150,8 +150,8 @@ def process_csv(
             torch_dtype="auto",
             device_map="auto",
         )
-    elif model == "deepseek-3.1-7b-instruct":
-        model_id = "deepseek-ai/DeepSeek-V3-7B-Instruct"
+    elif model == "deepseek":
+        model_id = "deepseek-ai/DeepSeek-V3.1"
         pipe = pipeline(
             "text-generation",
             model=model_id,
