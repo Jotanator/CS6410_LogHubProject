@@ -118,7 +118,7 @@ def process_csv_with_vllm(
             # Try to parse JSON; if it fails, store raw text
             try:
                 parsed = extract_json_from_text(text)
-            except json.JSONDecodeError:
+            except Exception as e:
                 parsed = {
                     "has_error": None,
                     "error_type": "parse_error",
@@ -171,7 +171,7 @@ def process_csv_with_vllm(
                 run_batch()
 
             # Periodic checkpoint: every 50 rows, dump accumulated results
-            if i % 50 == 0 and i > 0:
+            if i % 25 == 0 and i > 0:
                 with open(output_path, "w", encoding="utf-8") as fp:
                     json.dump(results, fp, ensure_ascii=False, indent=2)
 
