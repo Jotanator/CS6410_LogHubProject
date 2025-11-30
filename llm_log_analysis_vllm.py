@@ -4,6 +4,35 @@ import json
 from typing import List, Dict, Any
 import argparse
 
+import json
+import re
+
+def extract_json_from_text(text: str) -> dict:
+    # Strip some common junk token that shows up in some chat templates
+    text = text.replace("assistantfinal", "").strip()
+
+    # First try: last {...} block in the string
+    start = text.rfind("{")
+    end = text.rfind("}")
+    if start != -1 and end != -1 and end > start:
+        candidate = text[start:end+1]
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            pass
+
+    # Fallback: regex over all {...} blocks, try from the end backwards
+    matches = re.findall(r"\{.*?\}", text, flags=re.S)
+    for candidate in reversed(matches):
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            continue
+
+    # If everything fails, raise or return a default
+    raise ValueError(f"Could not extract valid JSON from LLM output: {text[:200]!r}")
+
+
 # 2) Sampling params
 sampling_params = SamplingParams(
     temperature=0.7,
@@ -65,13 +94,11 @@ def process_csv_with_vllm(
         llm = LLM(
         model="openai/gpt-oss-20b",   # works if it's a causal LM on HF
         dtype="bfloat16",             # or float16
-        trust_remote_code=True        # usually needed for OSS models
         )
     elif model == "qwen":
         llm = LLM(
         model="Qwen/Qwen2.5-4B-Instruct",   # ✔ correct HF ID (2507 = July 2025 update)
         dtype="bfloat16",
-        trust_remote_code=True,            # Qwen models require this
         )
 
     def run_batch():
@@ -90,7 +117,7 @@ def process_csv_with_vllm(
 
             # Try to parse JSON; if it fails, store raw text
             try:
-                parsed = json.loads(text)
+                parsed = extract_json_from_text(text)
             except json.JSONDecodeError:
                 parsed = {
                     "has_error": None,
