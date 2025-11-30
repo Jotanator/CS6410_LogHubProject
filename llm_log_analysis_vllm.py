@@ -4,12 +4,6 @@ import json
 from typing import List, Dict, Any
 import argparse
 
-# 1) Instantiate the vLLM model ONCE
-llm = LLM(
-    model="meta-llama/Meta-Llama-3-8B-Instruct",  # any HF causal LM compatible w/ vLLM
-    dtype="bfloat16",                             # or "float16"
-)
-
 # 2) Sampling params
 sampling_params = SamplingParams(
     temperature=0.7,
@@ -28,10 +22,19 @@ keeping the answer short and simple.
 Log entry:
 ```log
 {log_text}
-Respond ONLY with a JSON object with the following keys:
-    "has_error": true or false
-    "error_type": short string label (e.g., "network", "configuration", "none", etc.)
-    "explanation": short natural language explanation
+Respond ONLY with a JSON object, do not repeat the promp go straight to the answer and reply with the following keys:
+   - "has_error": true or false
+   - "error_type": short string label (e.g., "network", "configuration", "none", etc.)
+   - "explanation": short natural language explanation
+
+Example output:
+
+{
+"has_error": true,
+"error_type": "network",
+"explanation": "Connection timed out while reaching database server."
+}
+
 """
 
 def build_prompt(log_text: str) -> str:
@@ -57,6 +60,12 @@ def process_csv_with_vllm(
         model="openai/gpt-oss-20b",   # works if it's a causal LM on HF
         dtype="bfloat16",             # or float16
         trust_remote_code=True        # usually needed for OSS models
+    )
+    elif model == "qwen":
+        llm = LLM(
+        model="Qwen/Qwen2.5-4B-Instruct",   # ✔ correct HF ID (2507 = July 2025 update)
+        dtype="bfloat16",
+        trust_remote_code=True,            # Qwen models require this
     )
 
     def run_batch():
