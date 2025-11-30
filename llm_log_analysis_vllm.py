@@ -12,29 +12,35 @@ sampling_params = SamplingParams(
 )
 
 # 3) Build a *single-string* prompt for vLLM.generate
-PROMPT_TEMPLATE = """You are a log analysis assistant.
-Given a single log line, you must detect whether it indicates an error or failure 
+PROMPT_TEMPLATE = """
+You are a log analysis assistant.
+Given a single log line, you must detect whether it indicates an error or failure
 with the system. You may ignore any formatting errors in the logs.
 
-Analyze the following log entry and detect ANY errors or abnormal behavior, 
+Analyze the following log entry and detect ANY errors or abnormal behavior,
 keeping the answer short and simple.
 
 Log entry:
 ```log
 {log_text}
-Respond ONLY with a JSON object, do not repeat the promp go straight to the answer and reply with the following keys:
-   - "has_error": true or false
-   - "error_type": short string label (e.g., "network", "configuration", "none", etc.)
-   - "explanation": short natural language explanation
+Respond ONLY with a valid JSON object. Do not repeat the prompt, do not add commentary.
+Use exactly the following keys:
+"has_error": true or false
+"error_type": short string label (e.g., "network", "configuration", "none", etc.)
+"explanation": short natural language explanation
 
-Example output:
-
+Example output (error case):
 {
 "has_error": true,
 "error_type": "network",
-"explanation": "Connection timed out while reaching database server."
+"explanation": "Connection timed out while reaching the database server."
 }
-
+Example output (no error case):
+{
+"has_error": false,
+"error_type": "none",
+"explanation": "No abnormal behavior detected in the log."
+}
 """
 
 def build_prompt(log_text: str) -> str:
