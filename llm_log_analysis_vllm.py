@@ -30,17 +30,17 @@ Use exactly the following keys:
 "explanation": short natural language explanation
 
 Example output (error case):
-{
+{{
 "has_error": true,
 "error_type": "network",
 "explanation": "Connection timed out while reaching the database server."
-}
+}}
 Example output (no error case):
-{
+{{
 "has_error": false,
 "error_type": "none",
 "explanation": "No abnormal behavior detected in the log."
-}
+}}
 """
 
 def build_prompt(log_text: str) -> str:
@@ -66,13 +66,13 @@ def process_csv_with_vllm(
         model="openai/gpt-oss-20b",   # works if it's a causal LM on HF
         dtype="bfloat16",             # or float16
         trust_remote_code=True        # usually needed for OSS models
-    )
+        )
     elif model == "qwen":
         llm = LLM(
         model="Qwen/Qwen2.5-4B-Instruct",   # ✔ correct HF ID (2507 = July 2025 update)
         dtype="bfloat16",
         trust_remote_code=True,            # Qwen models require this
-    )
+        )
 
     def run_batch():
         """Run vLLM on the current batch and extend results."""
