@@ -83,7 +83,7 @@ def process_csv_with_vllm(
     model: str,
     has_header: bool = True,
     max_rows: int | None = None,
-    batch_size: int = 32,
+    batch_size: int = 64,
     output_path: str = "output.json",
 ) -> List[Dict[str, Any]]:
     results: List[Dict[str, Any]] = []
