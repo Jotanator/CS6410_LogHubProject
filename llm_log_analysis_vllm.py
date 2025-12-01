@@ -4,7 +4,6 @@ import json
 from typing import List, Dict, Any, Set
 import argparse
 import os
-import hashlib
 import re
 
 try:
@@ -82,69 +81,6 @@ def build_prompt(log_text: str) -> str:
     return PROMPT_TEMPLATE.format(log_text=log_text)
 
 
-def compute_prompt_hash(prompt: str) -> str:
-    """Compute a hash of the prompt for deduplication."""
-    return hashlib.sha256(prompt.encode("utf-8")).hexdigest()
-
-
-def load_existing_results(output_path: str) -> tuple[List[Dict[str, Any]], Set[str]]:
-    """
-    Load existing results from the output file and build a set of processed prompt hashes.
-    
-    Returns:
-        Tuple of (existing_results_list, set_of_processed_prompt_hashes)
-    """
-    if not os.path.exists(output_path):
-        return [], set()
-    
-    try:
-        with open(output_path, "r", encoding="utf-8") as f:
-            existing_results = json.load(f)
-        
-        # Build set of prompt hashes from existing results
-        processed_hashes = set()
-        for result in existing_results:
-            log_text = result.get("log_text", "")
-            prompt = build_prompt(log_text)
-            prompt_hash = compute_prompt_hash(prompt)
-            processed_hashes.add(prompt_hash)
-        
-        print(f"Loaded {len(existing_results)} existing results, skipping already processed prompts.")
-        return existing_results, processed_hashes
-    except (json.JSONDecodeError, IOError) as e:
-        print(f"Warning: Could not load existing results from {output_path}: {e}")
-        return [], set()
-
-
-def log_batch_to_wandb(
-    batch_results: List[Dict[str, Any]],
-    batch_num: int,
-    total_processed: int,
-) -> None:
-    """Log batch results to wandb."""
-    if not WANDB_AVAILABLE or wandb.run is None:
-        return
-    
-    # Count errors in this batch
-    errors_in_batch = sum(
-        1 for r in batch_results 
-        if r.get("llm_result", {}).get("has_error") is True
-    )
-    parse_errors = sum(
-        1 for r in batch_results
-        if r.get("llm_result", {}).get("error_type") == "parse_error"
-    )
-    
-    # Log metrics
-    wandb.log({
-        "batch_num": batch_num,
-        "total_processed": total_processed,
-        "batch_size": len(batch_results),
-        "errors_detected": errors_in_batch,
-        "parse_errors": parse_errors,
-    })
-
-
 ### 2. CSV → batched vLLM inference → JSON output
 
 def process_csv_with_vllm(
@@ -155,60 +91,27 @@ def process_csv_with_vllm(
     batch_size: int = 64,
     output_path: str = "output.json",
     wandb_project: str | None = None,
-    wandb_run_name: str | None = None,
-    wandb_log_frequency: int = 1,
-    resume: bool = True,
 ) -> List[Dict[str, Any]]:
-    """
-    Process CSV with vLLM for log analysis.
-    
-    Args:
-        csv_path: Path to input CSV file
-        model: Model name to use
-        has_header: Whether CSV has a header row
-        max_rows: Maximum number of rows to process
-        batch_size: Number of prompts per batch
-        output_path: Path to save results JSON
-        wandb_project: W&B project name (if None, wandb logging is disabled)
-        wandb_run_name: W&B run name (optional)
-        wandb_log_frequency: Log to wandb every N batches (default: 1 = every batch)
-        resume: If True, load existing results and skip already processed prompts
-    
-    Returns:
-        List of result dictionaries
-    """
-    # Track if we initialized wandb in this run
-    wandb_initialized = False
-    
-    # Initialize wandb if project is specified
-    if wandb_project and WANDB_AVAILABLE:
-        wandb.init(
-            project=wandb_project,
-            name=wandb_run_name,
-            config={
-                "csv_path": csv_path,
-                "model": model,
-                "batch_size": batch_size,
-                "max_rows": max_rows,
-            },
-        )
-        wandb_initialized = True
-        print(f"W&B logging enabled for project: {wandb_project}")
-    elif wandb_project and not WANDB_AVAILABLE:
-        print("Warning: wandb_project specified but wandb is not installed. Install with: pip install wandb")
-    
-    # Load existing results if resume is enabled
-    processed_hashes: Set[str] = set()
-    if resume:
-        results, processed_hashes = load_existing_results(output_path)
+    # Load existing results for resume
+    processed_logs: Set[str] = set()
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                results = json.load(f)
+            processed_logs = {r.get("log_text", "") for r in results}
+            print(f"Loaded {len(results)} existing results, skipping processed prompts.")
+        except (json.JSONDecodeError, IOError):
+            results = []
     else:
         results: List[Dict[str, Any]] = []
     
-    batch_prompts: List[str] = []
-    batch_meta: List[Dict[str, Any]] = []  # store row_index, row, log_text
-    batch_num = 0
-    skipped_count = 0
+    # Init wandb
+    if wandb_project and WANDB_AVAILABLE:
+        wandb.init(project=wandb_project, config={"model": model, "batch_size": batch_size})
     
+    batch_prompts: List[str] = []
+    batch_meta: List[Dict[str, Any]] = []
+    batch_num = 0
     if "gpt-oss-20b" == model:
         llm = LLM(
         model="openai/gpt-oss-20b",   # works if it's a causal LM on HF
@@ -228,8 +131,6 @@ def process_csv_with_vllm(
             return
 
         batch_num += 1
-        batch_start_idx = len(results)
-        
         # vLLM batched generation
         outputs = llm.generate(batch_prompts, sampling_params)
 
@@ -255,17 +156,12 @@ def process_csv_with_vllm(
                 "llm_result": parsed,
             }
             results.append(output_record)
-        
-        # Log to wandb after each batch (or per wandb_log_frequency)
-        if batch_num % wandb_log_frequency == 0:
-            batch_results = results[batch_start_idx:]
-            log_batch_to_wandb(batch_results, batch_num, len(results))
-        
-        # Save checkpoint after each batch to minimize data loss on GPU suspension
+
+        # Log to wandb and save checkpoint after each batch
+        if WANDB_AVAILABLE and wandb.run is not None:
+            wandb.log({"batch_num": batch_num, "total_processed": len(results)})
         with open(output_path, "w", encoding="utf-8") as fp:
             json.dump(results, fp, ensure_ascii=False, indent=2)
-        
-        print(f"Batch {batch_num}: processed {len(batch_prompts)} prompts, total: {len(results)}")
 
         # Clear batch buffers
         batch_prompts = []
@@ -288,16 +184,12 @@ def process_csv_with_vllm(
             else:
                 log_text = ",".join(row)
 
-            prompt = build_prompt(log_text)
-            
-            # Check if this prompt was already processed (skip if exact match)
-            prompt_hash = compute_prompt_hash(prompt)
-            if prompt_hash in processed_hashes:
-                skipped_count += 1
+            # Skip if already processed
+            if log_text in processed_logs:
                 continue
-            
-            # Mark as processed to avoid duplicates in current run
-            processed_hashes.add(prompt_hash)
+            processed_logs.add(log_text)
+
+            prompt = build_prompt(log_text)
 
             batch_prompts.append(prompt)
             batch_meta.append(
@@ -315,24 +207,10 @@ def process_csv_with_vllm(
         # Flush any remaining prompts
         run_batch()
 
-    if skipped_count > 0:
-        print(f"Skipped {skipped_count} already processed prompts.")
-    
-    # Final save
+    # Final save and finish wandb
     with open(output_path, "w", encoding="utf-8") as fp:
         json.dump(results, fp, ensure_ascii=False, indent=2)
-    
-    # Log final summary to wandb and finish if we initialized it
-    if wandb_initialized and WANDB_AVAILABLE and wandb.run is not None:
-        total_errors = sum(
-            1 for r in results 
-            if r.get("llm_result", {}).get("has_error") is True
-        )
-        wandb.log({
-            "final_total_processed": len(results),
-            "final_total_errors": total_errors,
-            "skipped_prompts": skipped_count,
-        })
+    if WANDB_AVAILABLE and wandb.run is not None:
         wandb.finish()
 
     return results
@@ -361,39 +239,10 @@ def main():
         help="Model name to use (e.g., deepseek-v3.1-instruct).",
     )
     parser.add_argument(
-        "--batch-size",
-        type=int,
-        default=64,
-        help="Number of prompts per batch (default: 64).",
-    )
-    parser.add_argument(
-        "--output-path",
-        type=str,
-        default="output.json",
-        help="Path to save results JSON (default: output.json).",
-    )
-    parser.add_argument(
         "--wandb-project",
         type=str,
         default=None,
         help="W&B project name. If specified, enables wandb logging.",
-    )
-    parser.add_argument(
-        "--wandb-run-name",
-        type=str,
-        default=None,
-        help="W&B run name (optional).",
-    )
-    parser.add_argument(
-        "--wandb-log-frequency",
-        type=int,
-        default=1,
-        help="Log to wandb every N batches (default: 1 = every batch).",
-    )
-    parser.add_argument(
-        "--no-resume",
-        action="store_true",
-        help="Disable resume functionality. By default, existing results are loaded and processed prompts are skipped.",
     )
     
     args = parser.parse_args()
@@ -403,12 +252,7 @@ def main():
         model=args.model,
         has_header=args.has_header,
         max_rows=args.max_rows,
-        batch_size=args.batch_size,
-        output_path=args.output_path,
         wandb_project=args.wandb_project,
-        wandb_run_name=args.wandb_run_name,
-        wandb_log_frequency=args.wandb_log_frequency,
-        resume=not args.no_resume,
     )
 
 
