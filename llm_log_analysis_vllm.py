@@ -1,7 +1,7 @@
 from vllm import LLM, SamplingParams
 import csv
 import json
-from typing import List, Dict, Any, Optional, Set
+from typing import List, Dict, Any, Set
 import argparse
 import os
 import hashlib
@@ -151,11 +151,11 @@ def process_csv_with_vllm(
     csv_path: str,
     model: str,
     has_header: bool = True,
-    max_rows: Optional[int] = None,
+    max_rows: int | None = None,
     batch_size: int = 64,
     output_path: str = "output.json",
-    wandb_project: Optional[str] = None,
-    wandb_run_name: Optional[str] = None,
+    wandb_project: str | None = None,
+    wandb_run_name: str | None = None,
     wandb_log_frequency: int = 1,
     resume: bool = True,
 ) -> List[Dict[str, Any]]:
@@ -177,6 +177,9 @@ def process_csv_with_vllm(
     Returns:
         List of result dictionaries
     """
+    # Track if we initialized wandb in this run
+    wandb_initialized = False
+    
     # Initialize wandb if project is specified
     if wandb_project and WANDB_AVAILABLE:
         wandb.init(
@@ -188,8 +191,8 @@ def process_csv_with_vllm(
                 "batch_size": batch_size,
                 "max_rows": max_rows,
             },
-            resume="allow",  # Allow resuming if run was interrupted
         )
+        wandb_initialized = True
         print(f"W&B logging enabled for project: {wandb_project}")
     elif wandb_project and not WANDB_AVAILABLE:
         print("Warning: wandb_project specified but wandb is not installed. Install with: pip install wandb")
@@ -319,8 +322,8 @@ def process_csv_with_vllm(
     with open(output_path, "w", encoding="utf-8") as fp:
         json.dump(results, fp, ensure_ascii=False, indent=2)
     
-    # Log final summary to wandb
-    if WANDB_AVAILABLE and wandb.run is not None:
+    # Log final summary to wandb and finish if we initialized it
+    if wandb_initialized and WANDB_AVAILABLE and wandb.run is not None:
         total_errors = sum(
             1 for r in results 
             if r.get("llm_result", {}).get("has_error") is True
