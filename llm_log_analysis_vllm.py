@@ -1,11 +1,16 @@
 from vllm import LLM, SamplingParams
 import csv
 import json
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Set
 import argparse
-
-import json
+import os
 import re
+
+try:
+    import wandb
+    WANDB_AVAILABLE = True
+except ImportError:
+    WANDB_AVAILABLE = False
 
 def extract_json_from_text(text: str) -> dict:
     # Strip some common junk token that shows up in some chat templates
@@ -85,11 +90,28 @@ def process_csv_with_vllm(
     max_rows: int | None = None,
     batch_size: int = 64,
     output_path: str = "output.json",
+    wandb_project: str | None = None,
 ) -> List[Dict[str, Any]]:
-    results: List[Dict[str, Any]] = []
+    # Load existing results for resume
+    processed_logs: Set[str] = set()
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                results = json.load(f)
+            processed_logs = {r.get("log_text", "") for r in results}
+            print(f"Loaded {len(results)} existing results, skipping processed prompts.")
+        except (json.JSONDecodeError, IOError):
+            results = []
+    else:
+        results: List[Dict[str, Any]] = []
+    
+    # Init wandb
+    if wandb_project and WANDB_AVAILABLE:
+        wandb.init(project=wandb_project, config={"model": model, "batch_size": batch_size})
+    
     batch_prompts: List[str] = []
-    batch_meta: List[Dict[str, Any]] = []  # store row_index, row, log_text
-    count_batch = 0
+    batch_meta: List[Dict[str, Any]] = []
+    batch_num = 0
     if "gpt-oss-20b" == model:
         llm = LLM(
         model="openai/gpt-oss-20b",   # works if it's a causal LM on HF
@@ -103,11 +125,12 @@ def process_csv_with_vllm(
 
     def run_batch():
         """Run vLLM on the current batch and extend results."""
-        nonlocal results, batch_prompts, batch_meta
+        nonlocal results, batch_prompts, batch_meta, batch_num
 
         if not batch_prompts:
             return
 
+        batch_num += 1
         # vLLM batched generation
         outputs = llm.generate(batch_prompts, sampling_params)
 
@@ -134,6 +157,12 @@ def process_csv_with_vllm(
             }
             results.append(output_record)
 
+        # Log to wandb and save checkpoint after each batch
+        if WANDB_AVAILABLE and wandb.run is not None:
+            wandb.log({"batch_num": batch_num, "total_processed": len(results)})
+        with open(output_path, "w", encoding="utf-8") as fp:
+            json.dump(results, fp, ensure_ascii=False, indent=2)
+
         # Clear batch buffers
         batch_prompts = []
         batch_meta = []
@@ -155,6 +184,11 @@ def process_csv_with_vllm(
             else:
                 log_text = ",".join(row)
 
+            # Skip if already processed
+            if log_text in processed_logs:
+                continue
+            processed_logs.add(log_text)
+
             prompt = build_prompt(log_text)
 
             batch_prompts.append(prompt)
@@ -169,20 +203,15 @@ def process_csv_with_vllm(
             # When batch is full, run vLLM
             if len(batch_prompts) >= batch_size:
                 run_batch()
-                count_batch += batch_size
-
-            # Periodic checkpoint: every 50 rows, dump accumulated results
-            if i % 128 == 0 and i > 0:
-                with open(output_path, "w", encoding="utf-8") as fp:
-                    json.dump(results, fp, ensure_ascii=False, indent=2)
-                    print(count_batch)
 
         # Flush any remaining prompts
         run_batch()
 
-    # Final save
+    # Final save and finish wandb
     with open(output_path, "w", encoding="utf-8") as fp:
         json.dump(results, fp, ensure_ascii=False, indent=2)
+    if WANDB_AVAILABLE and wandb.run is not None:
+        wandb.finish()
 
     return results
 
@@ -209,6 +238,12 @@ def main():
         "--model",
         help="Model name to use (e.g., deepseek-v3.1-instruct).",
     )
+    parser.add_argument(
+        "--wandb-project",
+        type=str,
+        default=None,
+        help="W&B project name. If specified, enables wandb logging.",
+    )
     
     args = parser.parse_args()
 
@@ -217,6 +252,7 @@ def main():
         model=args.model,
         has_header=args.has_header,
         max_rows=args.max_rows,
+        wandb_project=args.wandb_project,
     )
 
 
