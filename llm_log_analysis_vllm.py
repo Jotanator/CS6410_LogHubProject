@@ -89,7 +89,7 @@ def process_csv_with_vllm(
     results: List[Dict[str, Any]] = []
     batch_prompts: List[str] = []
     batch_meta: List[Dict[str, Any]] = []  # store row_index, row, log_text
-
+    count_batch = 0
     if "gpt-oss-20b" == model:
         llm = LLM(
         model="openai/gpt-oss-20b",   # works if it's a causal LM on HF
@@ -169,11 +169,13 @@ def process_csv_with_vllm(
             # When batch is full, run vLLM
             if len(batch_prompts) >= batch_size:
                 run_batch()
+                count_batch += batch_size
 
             # Periodic checkpoint: every 50 rows, dump accumulated results
-            if i % 25 == 0 and i > 0:
+            if i % 128 == 0 and i > 0:
                 with open(output_path, "w", encoding="utf-8") as fp:
                     json.dump(results, fp, ensure_ascii=False, indent=2)
+                    print(count_batch)
 
         # Flush any remaining prompts
         run_batch()
