@@ -1,0 +1,20 @@
+{
+  "dataset": "openstack",
+  "n_test": 2050,
+  "n_test_normal": 1852,
+  "n_test_anomaly": 198,
+  "tp": 173,
+  "fp": 1605,
+  "tn": 216,
+  "fn": 23,
+  "precision": 0.09730033745781777,
+  "recall": 0.8826530612244898,
+  "f1": 0.1752786220871327,
+  "accuracy": 0.19286068418443233,
+  "prompt_tokens": 473673,
+  "completion_tokens": 5326033,
+  "total_cost_usd": 2.2630416400000026,
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+  "notes": "zero-shot, per-sequence classification based on event ID sequences",
+  "skipped": 33
+}

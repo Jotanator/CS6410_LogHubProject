@@ -1,0 +1,2541 @@
+idx,true_label,pred_label,anomaly_pred,prompt_tokens,completion_tokens,total_tokens,cost_input_usd,cost_output_usd,raw_content,error
+0,normal,anomaly,True,3345,492,3837,0.000937,0.000197,"{""label"": ""anomaly"", ""anomaly"": true}",
+1,normal,anomaly,True,453,2498,2951,0.000127,0.000999,"{""label"": ""anomaly"", ""anomaly"": true}",
+2,normal,anomaly,True,453,1127,1580,0.000127,0.000451,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+3,normal,normal,False,453,6144,6597,0.000127,0.002458,"{""label"": ""normal"", ""anomaly"": false}",
+4,normal,anomaly,True,453,1001,1454,0.000127,0.000400,"{""label"": ""anomaly"", ""anomaly"": true}",
+5,normal,anomaly,True,453,1359,1812,0.000127,0.000544,"{""label"": ""anomaly"", ""anomaly"": true}",
+6,normal,anomaly,True,453,2053,2506,0.000127,0.000821,"{""label"": ""anomaly"", ""anomaly"": true}",
+7,normal,anomaly,True,541,11069,11610,0.000151,0.004428,"{""label"": ""anomaly"", ""anomaly"": true}",
+8,normal,anomaly,True,333,1069,1402,0.000093,0.000428,"{""label"": ""anomaly"", ""anomaly"": true}",
+9,normal,anomaly,True,453,2974,3427,0.000127,0.001190,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+10,normal,anomaly,True,453,1196,1649,0.000127,0.000478,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+11,normal,anomaly,True,441,1195,1636,0.000123,0.000478,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+12,normal,anomaly,True,441,4514,4955,0.000123,0.001806,"{""label"": ""anomaly"", ""anomaly"": true}",
+13,normal,anomaly,True,3390,1006,4396,0.000949,0.000402,"{""label"": ""anomaly"", ""anomaly"": true}",
+14,normal,anomaly,True,441,8566,9007,0.000123,0.003426,"{""label"": ""anomaly"", ""anomaly"": true}",
+15,normal,anomaly,True,441,1538,1979,0.000123,0.000615,"{""label"": ""anomaly"", ""anomaly"": true}",
+16,normal,anomaly,True,441,4899,5340,0.000123,0.001960,"{""label"": ""anomaly"", ""anomaly"": true}",
+17,normal,anomaly,True,441,1164,1605,0.000123,0.000466,"{""label"": ""anomaly"", ""anomaly"": true}",
+18,normal,anomaly,True,321,2970,3291,0.000090,0.001188,"{""label"": ""anomaly"", ""anomaly"": true}",
+19,normal,anomaly,True,581,1169,1750,0.000163,0.000468,"{""label"": ""anomaly"", ""anomaly"": true}",
+20,normal,anomaly,True,441,4335,4776,0.000123,0.001734,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+21,normal,anomaly,True,441,1051,1492,0.000123,0.000420,"{""label"": ""anomaly"", ""anomaly"": true}",
+22,normal,anomaly,True,441,1607,2048,0.000123,0.000643,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+23,normal,anomaly,True,441,1631,2072,0.000123,0.000652,"{""label"": ""anomaly"", ""anomaly"": true}",
+24,normal,normal,False,333,1429,1762,0.000093,0.000572,"{""label"": ""normal"", ""anomaly"": false}",
+25,normal,anomaly,True,5026,624,5650,0.001407,0.000250,"{""label"": ""anomaly"", ""anomaly"": true}",
+26,normal,anomaly,True,453,930,1383,0.000127,0.000372,"{""label"": ""anomaly"", ""anomaly"": true}",
+27,normal,anomaly,True,565,2327,2892,0.000158,0.000931,"{""label"": ""anomaly"", ""anomaly"": true}",
+28,normal,anomaly,True,441,986,1427,0.000123,0.000394,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+29,normal,anomaly,True,433,1074,1507,0.000121,0.000430,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+30,normal,anomaly,True,397,710,1107,0.000111,0.000284,"{""label"": ""anomaly"", ""anomaly"": true}",
+31,normal,anomaly,True,453,3272,3725,0.000127,0.001309,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+32,normal,anomaly,True,453,993,1446,0.000127,0.000397,"{""label"": ""anomaly"", ""anomaly"": true}",
+33,normal,anomaly,True,441,859,1300,0.000123,0.000344,"{""label"": ""anomaly"", ""anomaly"": true}",
+34,normal,anomaly,True,277,3028,3305,0.000078,0.001211,"{""label"": ""anomaly"", ""anomaly"": true}",
+35,normal,anomaly,True,277,2829,3106,0.000078,0.001132,"{""label"": ""anomaly"", ""anomaly"": true}",
+36,normal,anomaly,True,321,1098,1419,0.000090,0.000439,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+37,normal,anomaly,True,441,765,1206,0.000123,0.000306,"{""label"": ""anomaly"", ""anomaly"": true}",
+38,normal,anomaly,True,441,7941,8382,0.000123,0.003176,"{""label"": ""anomaly"", ""anomaly"": true}",
+39,normal,anomaly,True,581,4195,4776,0.000163,0.001678,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+40,normal,anomaly,True,441,3912,4353,0.000123,0.001565,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+41,normal,anomaly,True,405,4145,4550,0.000113,0.001658,"{""label"": ""anomaly"", ""anomaly"": true}",
+42,normal,anomaly,True,441,1686,2127,0.000123,0.000674,"{""label"": ""anomaly"", ""anomaly"": true}",
+43,normal,anomaly,True,441,1563,2004,0.000123,0.000625,"{""label"": ""anomaly"", ""anomaly"": true}",
+44,normal,anomaly,True,441,729,1170,0.000123,0.000292,"{""label"": ""anomaly"", ""anomaly"": true}",
+45,normal,anomaly,True,441,1250,1691,0.000123,0.000500,"{""label"": ""anomaly"", ""anomaly"": true}",
+46,normal,anomaly,True,441,2755,3196,0.000123,0.001102,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+47,normal,anomaly,True,417,780,1197,0.000117,0.000312,"{""label"": ""anomaly"", ""anomaly"": true}",
+48,normal,anomaly,True,381,1112,1493,0.000107,0.000445,"{""label"": ""anomaly"", ""anomaly"": true}",
+49,normal,anomaly,True,417,1552,1969,0.000117,0.000621,"{""label"": ""anomaly"", ""anomaly"": true}",
+50,normal,anomaly,True,3948,1484,5432,0.001105,0.000594,"{""label"": ""anomaly"", ""anomaly"": true}",
+51,normal,anomaly,True,429,808,1237,0.000120,0.000323,"{""label"": ""anomaly"", ""anomaly"": true}",
+52,normal,anomaly,True,409,1449,1858,0.000115,0.000580,"{""label"": ""anomaly"", ""anomaly"": true}",
+53,normal,anomaly,True,417,5103,5520,0.000117,0.002041,"{""label"": ""anomaly"", ""anomaly"": true}",
+54,normal,anomaly,True,417,1168,1585,0.000117,0.000467,"{""label"": ""anomaly"", ""anomaly"": true}",
+55,normal,anomaly,True,501,2123,2624,0.000140,0.000849,"{""label"": ""anomaly"", ""anomaly"": true}",
+56,normal,anomaly,True,417,919,1336,0.000117,0.000368,"{""label"": ""anomaly"", ""anomaly"": true}",
+57,normal,anomaly,True,417,1147,1564,0.000117,0.000459,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+58,normal,anomaly,True,3515,1325,4840,0.000984,0.000530,"{""label"": ""anomaly"", ""anomaly"": true}",
+59,normal,anomaly,True,453,992,1445,0.000127,0.000397,"{""label"": ""anomaly"", ""anomaly"": true}",
+60,normal,anomaly,True,453,810,1263,0.000127,0.000324,"{""label"": ""anomaly"", ""anomaly"": true}",
+61,normal,anomaly,True,525,4182,4707,0.000147,0.001673,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+62,normal,anomaly,True,453,6539,6992,0.000127,0.002616,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+63,normal,anomaly,True,453,573,1026,0.000127,0.000229,"{""label"": ""anomaly"", ""anomaly"": true}",
+64,normal,anomaly,True,453,6618,7071,0.000127,0.002647,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+65,normal,,,0,0,0,0.000000,0.000000,error: The read operation timed out,The read operation timed out
+66,normal,anomaly,True,453,1338,1791,0.000127,0.000535,"{""label"": ""anomaly"", ""anomaly"": true}",
+67,normal,anomaly,True,333,4262,4595,0.000093,0.001705,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+68,normal,anomaly,True,373,1055,1428,0.000104,0.000422,"{""label"": ""anomaly"", ""anomaly"": true}",
+69,normal,anomaly,True,193,1635,1828,0.000054,0.000654,"{""label"": ""anomaly"", ""anomaly"": true}",
+70,normal,anomaly,True,417,1836,2253,0.000117,0.000734,"{""label"": ""anomaly"", ""anomaly"": true}",
+71,normal,anomaly,True,277,846,1123,0.000078,0.000338,"{""label"": ""anomaly"", ""anomaly"": true}",
+72,normal,anomaly,True,349,2506,2855,0.000098,0.001002,"{""label"": ""anomaly"", ""anomaly"": true}",
+73,normal,anomaly,True,417,2725,3142,0.000117,0.001090,"{""label"": ""anomaly"", ""anomaly"": true}",
+74,normal,anomaly,True,8365,630,8995,0.002342,0.000252,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+75,normal,anomaly,True,489,687,1176,0.000137,0.000275,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+76,normal,anomaly,True,417,930,1347,0.000117,0.000372,"{""label"": ""anomaly"", ""anomaly"": true}",
+77,normal,normal,False,417,6091,6508,0.000117,0.002436,"{""label"": ""normal"", ""anomaly"": false}",
+78,normal,anomaly,True,417,1634,2051,0.000117,0.000654,"{""label"": ""anomaly"", ""anomaly"": true}",
+79,normal,anomaly,True,417,5754,6171,0.000117,0.002302,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+80,normal,anomaly,True,325,2534,2859,0.000091,0.001014,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+81,normal,anomaly,True,277,2296,2573,0.000078,0.000918,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+82,normal,anomaly,True,377,1549,1926,0.000106,0.000620,"{""label"": ""anomaly"", ""anomaly"": true}",
+83,normal,anomaly,True,301,1218,1519,0.000084,0.000487,"{""label"": ""anomaly"", ""anomaly"": true}",
+84,normal,anomaly,True,417,4731,5148,0.000117,0.001892,"{""label"": ""anomaly"", ""anomaly"": true}",
+85,normal,anomaly,True,417,951,1368,0.000117,0.000380,"{""label"": ""anomaly"", ""anomaly"": true}",
+86,normal,anomaly,True,641,1229,1870,0.000179,0.000492,"{""label"": ""anomaly"", ""anomaly"": true}",
+87,normal,anomaly,True,301,1220,1521,0.000084,0.000488,"{""label"": ""anomaly"", ""anomaly"": true}",
+88,normal,anomaly,True,253,5304,5557,0.000071,0.002122,"{""label"": ""anomaly"", ""anomaly"": true}",
+89,normal,anomaly,True,653,995,1648,0.000183,0.000398,"{""label"": ""anomaly"", ""anomaly"": true}",
+90,normal,anomaly,True,301,1721,2022,0.000084,0.000688,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+91,normal,anomaly,True,309,1001,1310,0.000087,0.000400,"{""label"": ""anomaly"", ""anomaly"": true}",
+92,normal,anomaly,True,417,2490,2907,0.000117,0.000996,"{""label"": ""anomaly"", ""anomaly"": true}",
+93,normal,anomaly,True,417,4678,5095,0.000117,0.001871,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+94,normal,anomaly,True,277,2571,2848,0.000078,0.001028,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+95,normal,anomaly,True,261,866,1127,0.000073,0.000346,"{""label"": ""anomaly"", ""anomaly"": true}",
+96,normal,anomaly,True,417,1215,1632,0.000117,0.000486,"{""label"": ""anomaly"", ""anomaly"": true}",
+97,normal,anomaly,True,321,1324,1645,0.000090,0.000530,"{""label"": ""anomaly"", ""anomaly"": true}",
+98,normal,anomaly,True,441,2060,2501,0.000123,0.000824,"{""label"": ""anomaly"", ""anomaly"": true}",
+99,normal,anomaly,True,4422,508,4930,0.001238,0.000203,"{""label"": ""anomaly"", ""anomaly"": true}",
+100,normal,anomaly,True,441,879,1320,0.000123,0.000352,"{""label"": ""anomaly"", ""anomaly"": true}",
+101,normal,anomaly,True,309,691,1000,0.000087,0.000276,"{""label"": ""anomaly"", ""anomaly"": true}",
+102,normal,anomaly,True,441,4894,5335,0.000123,0.001958,"{""label"": ""anomaly"", ""anomaly"": true}",
+103,normal,anomaly,True,285,6871,7156,0.000080,0.002748,"{""label"": ""anomaly"", ""anomaly"": true}",
+104,normal,anomaly,True,357,1123,1480,0.000100,0.000449,"{""label"": ""anomaly"", ""anomaly"": true}",
+105,normal,anomaly,True,497,2854,3351,0.000139,0.001142,"{""label"": ""anomaly"", ""anomaly"": true}",
+106,normal,anomaly,True,441,945,1386,0.000123,0.000378,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+107,normal,anomaly,True,441,791,1232,0.000123,0.000316,"{""label"": ""anomaly"", ""anomaly"": true}",
+108,normal,anomaly,True,441,1367,1808,0.000123,0.000547,"{""label"": ""anomaly"", ""anomaly"": true}",
+109,normal,anomaly,True,441,5200,5641,0.000123,0.002080,"{""label"": ""anomaly"", ""anomaly"": true}",
+110,normal,anomaly,True,441,2334,2775,0.000123,0.000934,"{""label"": ""anomal"", ""anomaly"": true}",
+111,normal,anomaly,True,441,3079,3520,0.000123,0.001232,"{""label"": ""anomaly"", ""anomaly"": true}",
+112,normal,anomaly,True,441,1063,1504,0.000123,0.000425,"{""label"": ""anomaly"", ""anomaly"": true}",
+113,normal,anomaly,True,453,3690,4143,0.000127,0.001476,"{""label"": ""anomaly"", ""anomaly"": true}",
+114,normal,anomaly,True,589,1486,2075,0.000165,0.000594,"{""label"": ""anomaly"", ""anomaly"": true}",
+115,normal,anomaly,True,453,2680,3133,0.000127,0.001072,"{""label"": ""anomaly"", ""anomaly"": true}",
+116,normal,anomaly,True,453,1314,1767,0.000127,0.000526,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+117,normal,anomaly,True,301,838,1139,0.000084,0.000335,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+118,normal,anomaly,True,333,2248,2581,0.000093,0.000899,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+119,normal,anomaly,True,7504,567,8071,0.002101,0.000227,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+120,normal,normal,False,453,4506,4959,0.000127,0.001802,"{""label"": ""normal"", ""anomaly"": false}",
+121,normal,anomaly,True,441,2410,2851,0.000123,0.000964,"{""label"": ""anomaly"", ""anomaly"": true}",
+122,normal,anomaly,True,453,2459,2912,0.000127,0.000984,"{""label"": ""anomaly"", ""anomaly"": true}",
+123,normal,anomaly,True,429,2800,3229,0.000120,0.001120,"{""label"": ""anomaly"", ""anomaly"": true}",
+124,normal,anomaly,True,1735,3477,5212,0.000486,0.001391,"{""label"": ""anomaly"", ""anomaly"": true}",
+125,normal,anomaly,True,481,767,1248,0.000135,0.000307,"{""label"": ""anomaly"", ""anomaly"": true}",
+126,normal,anomaly,True,429,5725,6154,0.000120,0.002290,"{""label"": ""anomaly"", ""anomaly"": true}",
+127,normal,anomaly,True,429,4562,4991,0.000120,0.001825,"{""label"": ""anomaly"", ""anomaly"": true}",
+128,normal,anomaly,True,429,1376,1805,0.000120,0.000550,"{""label"": ""anomaly"", ""anomaly"": true}",
+129,normal,anomaly,True,429,2542,2971,0.000120,0.001017,"{""label"": ""anomaly"", ""anomaly"": true}",
+130,normal,anomaly,True,381,746,1127,0.000107,0.000298,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+131,normal,anomaly,True,2785,1945,4730,0.000780,0.000778,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+132,normal,anomaly,True,349,708,1057,0.000098,0.000283,"{""label"": ""anomaly"", ""anomaly"": true}",
+133,normal,anomaly,True,429,1311,1740,0.000120,0.000524,"{""label"": ""anomaly"", ""anomaly"": true}",
+134,normal,anomaly,True,429,2737,3166,0.000120,0.001095,"{""label"": ""anomaly"", ""anomaly"": true}",
+135,normal,anomaly,True,417,774,1191,0.000117,0.000310,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+136,normal,anomaly,True,441,1307,1748,0.000123,0.000523,"{""label"": ""anomaly"", ""anomaly"": true}",
+137,normal,anomaly,True,441,4894,5335,0.000123,0.001958,"{""label"": ""anomaly"", ""anomaly"": true}",
+138,normal,anomaly,True,441,3795,4236,0.000123,0.001518,"{""label"": ""anomaly"", ""anomaly"": true}",
+139,normal,anomaly,True,441,1067,1508,0.000123,0.000427,"{""label"": ""anomaly"", ""anomaly"": true}",
+140,normal,anomaly,True,441,2478,2919,0.000123,0.000991,"{""label"": ""anomaly"", ""anomaly"": true}",
+141,normal,anomaly,True,441,1450,1891,0.000123,0.000580,"{""label"": ""anomaly"", ""anomaly"": true}",
+142,normal,anomaly,True,441,672,1113,0.000123,0.000269,"{""label"": ""anomaly"", ""anomaly"": true}",
+143,normal,anomaly,True,441,859,1300,0.000123,0.000344,"{""label"": ""anomaly"", ""anomaly"": true}",
+144,normal,normal,False,441,10217,10658,0.000123,0.004087,"{ ""label"": ""normal"",
+  ""anomaly"": false
+}",
+145,normal,anomaly,True,321,3265,3586,0.000090,0.001306,"{""label"": ""anomaly"", ""anomaly"": true}",
+146,normal,anomaly,True,261,682,943,0.000073,0.000273,"{""label"": ""anomaly"", ""anomaly"": true}",
+147,normal,anomaly,True,397,882,1279,0.000111,0.000353,"{""label"": ""anomaly"", ""anomaly"": true}",
+148,normal,anomaly,True,4644,1257,5901,0.001300,0.000503,"{""label"": ""anomaly"", ""anomaly"": true}",
+149,normal,anomaly,True,253,2351,2604,0.000071,0.000940,"{""label"": ""anomaly"", ""anomaly"": true}",
+150,anomaly,anomaly,True,417,1480,1897,0.000117,0.000592,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+151,anomaly,anomaly,True,3475,3127,6602,0.000973,0.001251,"{""label"": ""anomaly"", ""anomaly"": true}",
+152,anomaly,anomaly,True,417,624,1041,0.000117,0.000250,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+153,anomaly,anomaly,True,417,3361,3778,0.000117,0.001344,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+154,anomaly,anomaly,True,417,1316,1733,0.000117,0.000526,"{""label"": ""anomaly"", ""anomaly"": true}",
+155,anomaly,anomaly,True,417,1496,1913,0.000117,0.000598,"{""label"": ""anomaly"", ""anomaly"": true}",
+156,anomaly,anomaly,True,417,745,1162,0.000117,0.000298,"{""label"": ""anomaly"", ""anomaly"": true}",
+157,anomaly,anomaly,True,417,1540,1957,0.000117,0.000616,"{""label"": ""anomaly"", ""anomaly"": true}",
+158,anomaly,anomaly,True,533,1698,2231,0.000149,0.000679,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+159,anomaly,anomaly,True,417,820,1237,0.000117,0.000328,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+160,anomaly,,,0,0,0,0.000000,0.000000,"error: API error occurred: Status 502 Content-Type ""text/html; charset=UTF-8"". Body: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+<title> | 500: Internal server error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+                <span class=""inline-block"">Internal server error</span>
+                <span class=""code-label"">Error code 500</span>
+            </h1>
+            <div>
+                Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&utm_campaign=openrouter.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2025-12-03 03:29:10 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                    <div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+  
+    Browser
+  
+  </h3>
+  
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+  
+</div>
+                    <div id=""cf-cloudflare-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&#38;utm_campaign=openrouter.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Ashburn</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+  <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&utm_campaign=openrouter.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+  
+</div>
+                    <div id=""cf-host-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">openrouter.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+  
+    Host
+  
+  </h3>
+  
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an internal server error on Cloudflare's network.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                    <p class=""mb-6"">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+    <p class=""text-13"">
+      <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">9a7ffa5eac71c5a9</strong></span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+      <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+        Your IP:
+        <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+        <span class=""hidden"" id=""cf-footer-ip"">74.98.228.133</span>
+        <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+      </span>
+      <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&#38;utm_campaign=openrouter.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>","API error occurred: Status 502 Content-Type ""text/html; charset=UTF-8"". Body: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+<title> | 500: Internal server error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+                <span class=""inline-block"">Internal server error</span>
+                <span class=""code-label"">Error code 500</span>
+            </h1>
+            <div>
+                Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&utm_campaign=openrouter.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2025-12-03 03:29:10 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                    <div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+  
+    Browser
+  
+  </h3>
+  
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+  
+</div>
+                    <div id=""cf-cloudflare-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&#38;utm_campaign=openrouter.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Ashburn</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+  <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&utm_campaign=openrouter.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+  
+</div>
+                    <div id=""cf-host-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">openrouter.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+  
+    Host
+  
+  </h3>
+  
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an internal server error on Cloudflare's network.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                    <p class=""mb-6"">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+    <p class=""text-13"">
+      <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">9a7ffa5eac71c5a9</strong></span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+      <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+        Your IP:
+        <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+        <span class=""hidden"" id=""cf-footer-ip"">74.98.228.133</span>
+        <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+      </span>
+      <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&#38;utm_campaign=openrouter.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>"
+161,anomaly,anomaly,True,417,2113,2530,0.000117,0.000845,"{""label"": ""anomaly"", ""anomaly"": true}",
+162,anomaly,anomaly,True,6606,558,7164,0.001850,0.000223,"{""label"": ""anomaly"", ""anomaly"": true}",
+163,anomaly,anomaly,True,453,3302,3755,0.000127,0.001321,"{""label"": ""anomaly"", ""anomaly"": true}",
+164,anomaly,anomaly,True,349,793,1142,0.000098,0.000317,"{""label"": ""anomaly"", ""anomaly"": true}",
+165,anomaly,anomaly,True,301,764,1065,0.000084,0.000306,"{""label"": ""anomaly"", ""anomaly"": true}",
+166,anomaly,anomaly,True,453,5436,5889,0.000127,0.002174,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+167,anomaly,anomaly,True,357,3677,4034,0.000100,0.001471,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+168,anomaly,anomaly,True,325,4752,5077,0.000091,0.001901,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+169,anomaly,anomaly,True,453,2393,2846,0.000127,0.000957,"{""label"": ""anomaly"", ""anomaly"": true}",
+170,anomaly,anomaly,True,453,700,1153,0.000127,0.000280,"{""label"": ""anomaly"", ""anomaly"": true}",
+171,anomaly,anomaly,True,581,504,1085,0.000163,0.000202,"{""label"": ""anomaly"", ""anomaly"": true}",
+172,anomaly,anomaly,True,333,3978,4311,0.000093,0.001591,"{""label"": ""anomaly"", ""anomaly"": true}",
+173,anomaly,anomaly,True,453,2562,3015,0.000127,0.001025,"{""label"": ""anomaly"", ""anomaly"": true}",
+174,anomaly,anomaly,True,373,775,1148,0.000104,0.000310,"{""label"": ""anomaly"", ""anomaly"": true}",
+175,anomaly,anomaly,True,441,1539,1980,0.000123,0.000616,"{""label"": ""anomaly"", ""anomaly"": true}",
+176,anomaly,anomaly,True,453,547,1000,0.000127,0.000219,"{""label"": ""anomaly"", ""anomaly"": true}",
+177,anomaly,anomaly,True,453,1097,1550,0.000127,0.000439,"{""label"": ""anomaly"", ""anomaly"": true}",
+178,anomaly,anomaly,True,453,16353,16806,0.000127,0.006541,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+179,anomaly,anomaly,True,453,2031,2484,0.000127,0.000812,"{""label"": ""anomaly"", ""anomaly"": true}",
+180,anomaly,anomaly,True,7654,4489,12143,0.002143,0.001796,"{""label"": ""anomaly"", ""anomaly"": true}",
+181,anomaly,anomaly,True,349,1800,2149,0.000098,0.000720,"{""label"": ""anomaly"", ""anomaly"": true}",
+182,anomaly,anomaly,True,301,739,1040,0.000084,0.000296,"{""label"": ""anomaly"", ""anomaly"": true}",
+183,anomaly,anomaly,True,453,1495,1948,0.000127,0.000598,"{""label"": ""anomaly"", ""anomaly"": true}",
+184,anomaly,anomaly,True,333,3138,3471,0.000093,0.001255,"{""label"": ""anomaly"", ""anomaly"": true}",
+185,anomaly,anomaly,True,441,850,1291,0.000123,0.000340,"{""label"": ""anomaly"", ""anomaly"": true}",
+186,anomaly,anomaly,True,597,3242,3839,0.000167,0.001297,"{""label"": ""anomalous"", ""anomaly"": true}",
+187,anomaly,anomaly,True,453,1710,2163,0.000127,0.000684,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+188,anomaly,anomaly,True,349,4673,5022,0.000098,0.001869,"{""label"": ""anomaly"", ""anomaly"": true}",
+189,anomaly,anomaly,True,453,886,1339,0.000127,0.000354,"{""label"": ""anomaly"", ""anomaly"": true}",
+190,anomaly,normal,False,453,5598,6051,0.000127,0.002239,"{""label"": ""normal"", ""anomaly"": false}",
+191,anomaly,anomaly,True,301,1139,1440,0.000084,0.000456,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+192,anomaly,anomaly,True,373,423,796,0.000104,0.000169,"{""label"": ""anomaly"", ""anomaly"": true}",
+193,anomaly,anomaly,True,453,2147,2600,0.000127,0.000859,"{""label"": ""anomaly"", ""anomaly"": true, ""reasoning"": ""The sequence shows repetitive patterns (115-120 IDs repeating multiple times) and ends with a long consecutive sequence (121-127), which often indicates system retries or failure escalation. These patterns align with known temporal anomalies like machine unresponsiveness or resource exhaustion.""}",
+194,anomaly,anomaly,True,397,2601,2998,0.000111,0.001040,"{""label"": ""anomaly"", ""anomaly"": true}",
+195,anomaly,anomaly,True,433,3514,3947,0.000121,0.001406,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+196,anomaly,anomaly,True,453,3651,4104,0.000127,0.001460,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+197,anomaly,anomaly,True,453,1317,1770,0.000127,0.000527,"{""label"": ""anomaly"", ""anomaly"": true}",
+198,anomaly,anomaly,True,429,1200,1629,0.000120,0.000480,"{""label"": ""anomaly"", ""anomaly"": true}",
+199,anomaly,anomaly,True,429,2359,2788,0.000120,0.000944,"{""label"": ""anomaly"", ""anomaly"": true}",
+200,anomaly,anomaly,True,381,1322,1703,0.000107,0.000529,"{""label"": ""anomaly"", ""anomaly"": true}",
+201,anomaly,anomaly,True,409,1561,1970,0.000115,0.000624,"{""label"": ""anomaly"", ""anomaly"": true}",
+202,anomaly,anomaly,True,417,2766,3183,0.000117,0.001106,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+203,anomaly,anomaly,True,237,1718,1955,0.000066,0.000687,"{""label"": ""anomaly"", ""anomaly"": true}",
+204,anomaly,anomaly,True,417,1919,2336,0.000117,0.000768,"{""label"": ""anomaly"", ""anomaly"": true}",
+205,anomaly,anomaly,True,417,1788,2205,0.000117,0.000715,"{""label"": ""anomaly"", ""anomaly"": true}",
+206,anomaly,anomaly,True,317,702,1019,0.000089,0.000281,"{""label"": ""anomaly"", ""anomaly"": true}",
+207,anomaly,anomaly,True,417,3771,4188,0.000117,0.001508,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+208,anomaly,anomaly,True,417,959,1376,0.000117,0.000384,"{""label"": ""anomaly"", ""anomaly"": true}",
+209,anomaly,anomaly,True,417,503,920,0.000117,0.000201,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+210,anomaly,anomaly,True,349,2523,2872,0.000098,0.001009,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+211,anomaly,anomaly,True,9637,743,10380,0.002698,0.000297,"{""label"": ""anomaly"", ""anomaly"": true}",
+212,anomaly,anomaly,True,417,1674,2091,0.000117,0.000670,"{""label"": ""anomaly"", ""anomaly"": true}",
+213,anomaly,anomaly,True,597,1975,2572,0.000167,0.000790,"{""label"": ""anomaly"", ""anomaly"": true}",
+214,anomaly,anomaly,True,417,7291,7708,0.000117,0.002916,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+215,anomaly,anomaly,True,3343,852,4195,0.000936,0.000341,"{""label"": ""anomaly"", ""anomaly"": true}",
+216,anomaly,anomaly,True,429,4110,4539,0.000120,0.001644,"{""label"": ""anomaly"", ""anomaly"": true}",
+217,anomaly,anomaly,True,429,1916,2345,0.000120,0.000766,"{""label"": ""anomaly"", ""anomaly"": true}",
+218,anomaly,anomaly,True,429,4974,5403,0.000120,0.001990,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+219,anomaly,anomaly,True,517,3079,3596,0.000145,0.001232,"{
+ ""label"": ""anomaly"",
+ ""anomaly"": true
+}",
+220,anomaly,,,0,0,0,0.000000,0.000000,error: Server disconnected without sending a response.,Server disconnected without sending a response.
+221,anomaly,anomaly,True,429,2116,2545,0.000120,0.000846,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+222,anomaly,normal,False,429,4140,4569,0.000120,0.001656,"{""label"": ""normal"", ""anomaly"": false}",
+223,anomaly,anomaly,True,429,1377,1806,0.000120,0.000551,"{""label"": ""anomaly"", ""anomaly"": true}",
+224,anomaly,anomaly,True,381,951,1332,0.000107,0.000380,"{""label"": ""anomaly"", ""anomaly"": true}",
+225,anomaly,anomaly,True,429,687,1116,0.000120,0.000275,"{    ""label"": ""anomaly"",
+    ""anomaly"": true
+}",
+226,anomaly,anomaly,True,429,840,1269,0.000120,0.000336,"{""label"": ""anomaly"", ""anomaly"": true}",
+227,anomaly,normal,False,501,4877,5378,0.000140,0.001951,"{
+  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+228,anomaly,anomaly,True,417,2243,2660,0.000117,0.000897,"{""label"": ""anomaly"", ""anomaly"": true}",
+229,anomaly,anomaly,True,377,10022,10399,0.000106,0.004009,"{""label"": ""anomaly"", ""anomaly"": true}",
+230,anomaly,anomaly,True,425,1269,1694,0.000119,0.000508,"{""label"": ""anomaly"", ""anomaly"": true}",
+231,anomaly,anomaly,True,429,1144,1573,0.000120,0.000458,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+232,anomaly,anomaly,True,417,3964,4381,0.000117,0.001586,"{""label"": ""anomaly"", ""anomaly"": true}",
+233,anomaly,anomaly,True,237,3415,3652,0.000066,0.001366,"{""label"": ""anomaly"", ""anomaly"": true}",
+234,anomaly,anomaly,True,409,2618,3027,0.000115,0.001047,"{""label"": ""anomaly"", ""anomaly"": true}",
+235,anomaly,anomaly,True,9078,762,9840,0.002542,0.000305,"{""label"": ""anomaly"", ""anomaly"": true}",
+236,anomaly,anomaly,True,409,903,1312,0.000115,0.000361,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+237,anomaly,anomaly,True,417,1434,1851,0.000117,0.000574,"{""label"": ""anomaly"", ""anomaly"": true}",
+238,anomaly,anomaly,True,417,1922,2339,0.000117,0.000769,"{""label"": ""anomaly"", ""anomaly"": true}",
+239,anomaly,anomaly,True,417,1751,2168,0.000117,0.000700,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+240,anomaly,anomaly,True,417,907,1324,0.000117,0.000363,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+241,anomaly,anomaly,True,417,2089,2506,0.000117,0.000836,"{""label"": ""anomaly"", ""anomaly"": true}",
+242,anomaly,anomaly,True,409,671,1080,0.000115,0.000268,"{""label"": ""anomaly"", ""anomaly"": true}",
+243,anomaly,anomaly,True,369,1523,1892,0.000103,0.000609,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+244,anomaly,anomaly,True,417,2333,2750,0.000117,0.000933,"{""label"": ""anomaly"", ""anomaly"": true}",
+245,anomaly,anomaly,True,433,428,861,0.000121,0.000171,"{""label"":""anomaly"",""anomaly"":true}",
+246,anomaly,anomaly,True,577,1992,2569,0.000162,0.000797,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+247,anomaly,anomaly,True,453,5772,6225,0.000127,0.002309,"{""label"": ""anomaly"", ""anomaly"": true}",
+248,anomaly,anomaly,True,473,1066,1539,0.000132,0.000426,"{""label"": ""anomaly"", ""anomaly"": true}",
+249,anomaly,anomaly,True,453,3479,3932,0.000127,0.001392,"{
+  ""label"": ""anomaly"", ""anomaly"": true
+}",
+250,anomaly,anomaly,True,421,1467,1888,0.000118,0.000587,"{""label"":""anomaly"",""anomaly"":true}",
+251,anomaly,anomaly,True,441,379,820,0.000123,0.000152,"{""label"": ""anomaly"", ""anomaly"": true}",
+252,anomaly,anomaly,True,2341,3428,5769,0.000655,0.001371,"{""label"": ""anomaly"", ""anomaly"": true}",
+253,anomaly,anomaly,True,413,814,1227,0.000116,0.000326,"{""label"": ""anomaly"", ""anomaly"": true}",
+254,anomaly,anomaly,True,441,1013,1454,0.000123,0.000405,"{""label"": ""anomaly"", ""anomaly"": true}",
+255,anomaly,normal,False,453,4593,5046,0.000127,0.001837,"{""label"": ""normal"", ""anomaly"": false}",
+256,anomaly,anomaly,True,525,1091,1616,0.000147,0.000436,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+257,anomaly,anomaly,True,7013,1234,8247,0.001964,0.000494,"{""label"": ""anomaly"", ""anomaly"": true}",
+258,anomaly,anomaly,True,453,2307,2760,0.000127,0.000923,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+259,anomaly,anomaly,True,453,5154,5607,0.000127,0.002062,"{""label"": ""anomaly"", ""anomaly"": true}",
+260,anomaly,anomaly,True,453,3189,3642,0.000127,0.001276,"{
+  ""label"": ""anomaly"", ""anomaly"": true
+}",
+261,anomaly,anomaly,True,277,3252,3529,0.000078,0.001301,"{""label"": ""anomaly"", ""anomaly"": true}",
+262,anomaly,anomaly,True,433,4047,4480,0.000121,0.001619,"{""label"": ""anomaly"", ""anomaly"": true}",
+263,anomaly,anomaly,True,453,585,1038,0.000127,0.000234,"{""label"": ""anomaly"", ""anomaly"": true}",
+264,anomaly,anomaly,True,333,2822,3155,0.000093,0.001129,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+265,anomaly,anomaly,True,441,1237,1678,0.000123,0.000495,"{
+	""label"": ""anomaly"",
+	""anomaly"": true
+}",
+266,anomaly,anomaly,True,585,6283,6868,0.000164,0.002513,"{""label"": ""anomaly"", ""anomaly"": true}",
+267,anomaly,anomaly,True,441,1022,1463,0.000123,0.000409,"{""label"": ""anomaly"", ""anomaly"": true}",
+268,anomaly,anomaly,True,441,1240,1681,0.000123,0.000496,"{""label"": ""anomaly"", ""anomaly"": true}",
+269,anomaly,anomaly,True,373,1259,1632,0.000104,0.000504,"{""label"": ""anomaly"", ""anomaly"": true}",
+270,anomaly,anomaly,True,397,1005,1402,0.000111,0.000402,"{""label"": ""anomaly"", ""anomaly"": true}",
+271,anomaly,anomaly,True,441,3749,4190,0.000123,0.001500,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+272,anomaly,anomaly,True,441,1544,1985,0.000123,0.000618,"{""label"": ""anomaly"", ""anomaly"": true}",
+273,anomaly,anomaly,True,349,1187,1536,0.000098,0.000475,"{""label"": ""anomaly"", ""anomaly"": true}",
+274,anomaly,anomaly,True,441,1097,1538,0.000123,0.000439,"{""label"": ""anomaly"", ""anomaly"": true}",
+275,anomaly,anomaly,True,6121,1111,7232,0.001714,0.000444,"{""label"": ""anomaly"", ""anomaly"": true}",
+276,anomaly,anomaly,True,453,5827,6280,0.000127,0.002331,"{""label"": ""anomaly"", ""anomaly"": true}",
+277,anomaly,anomaly,True,441,712,1153,0.000123,0.000285,"{""label"": ""anomaly"", ""anomaly"": true}",
+278,anomaly,anomaly,True,441,1450,1891,0.000123,0.000580,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+279,anomaly,anomaly,True,321,2100,2421,0.000090,0.000840,"{""label"": ""anomaly"", ""anomaly"": true}",
+280,anomaly,anomaly,True,429,611,1040,0.000120,0.000244,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+281,anomaly,anomaly,True,573,744,1317,0.000160,0.000298,"{""label"": ""anomaly"", ""anomaly"": true}",
+282,anomaly,anomaly,True,349,1722,2071,0.000098,0.000689,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+283,anomaly,anomaly,True,6600,701,7301,0.001848,0.000280,"{""label"": ""anomaly"", ""anomaly"": true}",
+284,anomaly,anomaly,True,325,665,990,0.000091,0.000266,"{""label"":""anomaly"",""anomaly"":true}",
+285,anomaly,anomaly,True,533,3008,3541,0.000149,0.001203,"{""label"": ""anomaly"", ""anomaly"": true}",
+286,anomaly,anomaly,True,429,1937,2366,0.000120,0.000775,"{""label"": ""anomaly"", ""anomaly"": true}",
+287,anomaly,anomaly,True,333,2924,3257,0.000093,0.001170,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+288,anomaly,anomaly,True,429,716,1145,0.000120,0.000286,"{""label"": ""anomaly"", ""anomaly"": true}",
+289,anomaly,anomaly,True,429,670,1099,0.000120,0.000268,"{""label"": ""anomaly"", ""anomaly"": true}",
+290,anomaly,anomaly,True,377,3492,3869,0.000106,0.001397,"{""label"": ""anomaly"", ""anomaly"": true}",
+291,anomaly,anomaly,True,361,1209,1570,0.000101,0.000484,"{""label"": ""anomaly"", ""anomaly"": true}",
+292,anomaly,anomaly,True,429,2203,2632,0.000120,0.000881,"{""label"": ""anomaly"", ""anomaly"": true}",
+293,anomaly,anomaly,True,429,1054,1483,0.000120,0.000422,"{""label"": ""anomaly"", ""anomaly"": true}",
+294,anomaly,anomaly,True,457,6250,6707,0.000128,0.002500,"{""label"": ""anomaly"", ""anomaly"": true}",
+295,anomaly,anomaly,True,369,4094,4463,0.000103,0.001638,"{""label"": ""anomaly"", ""anomaly"": true}",
+296,anomaly,anomaly,True,1805,1813,3618,0.000505,0.000725,"{""label"": ""anomaly"", ""anomaly"": true}",
+297,anomaly,anomaly,True,429,1540,1969,0.000120,0.000616,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+298,anomaly,anomaly,True,373,909,1282,0.000104,0.000364,"{ ""label"": ""anomaly"",
+    ""anomaly"": true
+}",
+299,anomaly,anomaly,True,409,1289,1698,0.000115,0.000516,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+300,anomaly,anomaly,True,429,2117,2546,0.000120,0.000847,"{""label"": ""anomaly"", ""anomaly"": true}",
+301,anomaly,anomaly,True,429,2231,2660,0.000120,0.000892,"{""label"": ""anomaly"", ""anomaly"": true}",
+302,anomaly,anomaly,True,441,9642,10083,0.000123,0.003857,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+303,anomaly,anomaly,True,441,3940,4381,0.000123,0.001576,"{""label"": ""anomaly"", ""anomaly"": true}",
+304,anomaly,anomaly,True,441,1303,1744,0.000123,0.000521,"{""label"": ""anomaly"", ""anomaly"": true}",
+305,anomaly,anomaly,True,321,3054,3375,0.000090,0.001222,"{""label"": ""anomaly"", ""anomaly"": true}",
+306,anomaly,anomaly,True,441,983,1424,0.000123,0.000393,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+307,anomaly,anomaly,True,441,1615,2056,0.000123,0.000646,"{""label"": ""anomaly"", ""anomaly"": true}",
+308,anomaly,anomaly,True,433,1412,1845,0.000121,0.000565,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+309,anomaly,,,0,0,0,0.000000,0.000000,error: Response validation failed: EOF while parsing a value at line 215 column 0,Response validation failed: EOF while parsing a value at line 215 column 0
+310,anomaly,anomaly,True,441,1886,2327,0.000123,0.000754,"{""label"": ""anomaly"", ""anomaly"": true}",
+311,anomaly,anomaly,True,441,1265,1706,0.000123,0.000506,"{""label"": ""anomaly"", ""anomaly"": true}",
+312,anomaly,anomaly,True,4776,1213,5989,0.001337,0.000485,"{""label"": ""anomaly"", ""anomaly"": true}",
+313,anomaly,anomaly,True,441,2383,2824,0.000123,0.000953,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+314,anomaly,anomaly,True,441,1815,2256,0.000123,0.000726,"{
+  ""label"": ""anomaly"", ""anomaly"": true
+}",
+315,anomaly,anomaly,True,441,459,900,0.000123,0.000184,"{""label"": ""anomaly"", ""anomaly"": true}",
+316,anomaly,anomaly,True,277,584,861,0.000078,0.000234,"{""label"": ""anomaly"", ""anomaly"": true}",
+317,anomaly,anomaly,True,309,1473,1782,0.000087,0.000589,"{""label"": ""anomaly"", ""anomaly"": true}",
+318,anomaly,anomaly,True,685,461,1146,0.000192,0.000184,"{""label"": ""anomaly"", ""anomaly"": true}",
+319,anomaly,anomaly,True,453,618,1071,0.000127,0.000247,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+320,anomaly,anomaly,True,497,2786,3283,0.000139,0.001114,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+321,anomaly,anomaly,True,645,607,1252,0.000181,0.000243,"{""label"": ""anomaly"", ""anomaly"": true}",
+322,anomaly,anomaly,True,741,690,1431,0.000207,0.000276,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+323,anomaly,anomaly,True,453,4605,5058,0.000127,0.001842,"{""label"": ""anomaly"", ""anomaly"": true}",
+324,anomaly,anomaly,True,2473,442,2915,0.000692,0.000177,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+325,anomaly,anomaly,True,685,984,1669,0.000192,0.000394,"{""label"": ""anomaly"", ""anomaly"": true}",
+326,anomaly,anomaly,True,685,261,946,0.000192,0.000104,"{""label"": ""anomaly"", ""anomaly"": true}",
+327,anomaly,anomaly,True,453,1012,1465,0.000127,0.000405,"{""label"": ""anomaly"", ""anomaly"": true}",
+328,anomaly,anomaly,True,453,2036,2489,0.000127,0.000814,"{""label"": ""anomaly"", ""anomaly"": true}",
+329,anomaly,anomaly,True,441,3890,4331,0.000123,0.001556,"{""label"": ""anomaly"", ""anomaly"": true}",
+330,anomaly,anomaly,True,649,673,1322,0.000182,0.000269,"{""label"": ""anomaly"", ""anomaly"": true}",
+331,anomaly,anomaly,True,397,1290,1687,0.000111,0.000516,"{""label"": ""anomaly"", ""anomaly"": true}",
+332,anomaly,anomaly,True,285,7268,7553,0.000080,0.002907,"{""label"": ""anomaly"", ""anomaly"": true}",
+333,anomaly,anomaly,True,453,3339,3792,0.000127,0.001336,"{""label"": ""anomaly"", ""anomaly"": true}",
+334,anomaly,anomaly,True,277,3273,3550,0.000078,0.001309,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+335,anomaly,anomaly,True,453,1348,1801,0.000127,0.000539,"{""label"": ""anomaly"", ""anomaly"": true}",
+336,anomaly,anomaly,True,325,715,1040,0.000091,0.000286,"{""label"": ""anomaly"", ""anomaly"": true}",
+337,anomaly,anomaly,True,684,1403,2087,0.000192,0.000561,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+338,anomaly,anomaly,True,621,1099,1720,0.000174,0.000440,"{""label"": ""anomaly"", ""anomaly"": true}",
+339,anomaly,anomaly,True,4995,2766,7761,0.001399,0.001106,"{""label"": ""anomaly"", ""anomaly"": true}",
+340,anomaly,anomaly,True,321,2826,3147,0.000090,0.001130,"{""label"": ""anomaly"", ""anomaly"": true}",
+341,anomaly,anomaly,True,453,6706,7159,0.000127,0.002682,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+342,anomaly,anomaly,True,349,610,959,0.000098,0.000244,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+343,anomaly,anomaly,True,6708,723,7431,0.001878,0.000289,"{""label"": ""anomaly"", ""anomaly"": true}",
+344,anomaly,anomaly,True,325,1537,1862,0.000091,0.000615,"{""label"": ""anomaly"", ""anomaly"": true}",
+345,anomaly,anomaly,True,453,2478,2931,0.000127,0.000991,"{""label"": ""anomaly"", ""anomaly"": true}",
+346,anomaly,,,0,0,0,0.000000,0.000000,error: The read operation timed out,The read operation timed out
+347,anomaly,anomaly,True,653,1297,1950,0.000183,0.000519,"{""label"": ""anomaly"", ""anomaly"": true}",
+348,anomaly,anomaly,True,357,1003,1360,0.000100,0.000401,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+349,anomaly,anomaly,True,453,1437,1890,0.000127,0.000575,"{""label"": ""anomaly"", ""anomaly"": true}",
+350,anomaly,anomaly,True,453,2958,3411,0.000127,0.001183,"{
+    ""label"": ""anomaly"",
+    ""anomaly"": true
+}",
+351,anomaly,anomaly,True,453,3306,3759,0.000127,0.001322,"{""label"": ""anomaly"", ""anomaly"": true}",
+352,anomaly,anomaly,True,453,942,1395,0.000127,0.000377,"{""label"": ""anomaly"", ""anomaly"": true}",
+353,anomaly,anomaly,True,373,996,1369,0.000104,0.000398,"{""label"": ""anomaly"", ""anomaly"": true}",
+354,anomaly,anomaly,True,489,5520,6009,0.000137,0.002208,"{""label"": ""anomaly"", ""anomaly"": true}",
+355,anomaly,anomaly,True,453,972,1425,0.000127,0.000389,"{""label"": ""anomaly"", ""anomaly"": true}",
+356,anomaly,anomaly,True,453,1947,2400,0.000127,0.000779,"{""label"": ""anomaly"", ""anomaly"": true}",
+357,anomaly,anomaly,True,349,1192,1541,0.000098,0.000477,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+358,anomaly,anomaly,True,453,5861,6314,0.000127,0.002344,"{""label"": ""anomaly"", ""anomaly"": true}",
+359,anomaly,anomaly,True,333,1469,1802,0.000093,0.000588,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+360,anomaly,anomaly,True,2554,3878,6432,0.000715,0.001551,"{""label"": ""anomaly"", ""anomaly"": true}",
+361,anomaly,anomaly,True,397,492,889,0.000111,0.000197,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+362,anomaly,anomaly,True,860,1833,2693,0.000241,0.000733,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+363,anomaly,anomaly,True,333,1918,2251,0.000093,0.000767,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+364,anomaly,anomaly,True,433,1127,1560,0.000121,0.000451,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+365,anomaly,normal,False,277,2630,2907,0.000078,0.001052,"{""label"": ""normal"", ""anomaly"": false}",
+366,anomaly,anomaly,True,237,3976,4213,0.000066,0.001590,"{""label"": ""anomaly"", ""anomaly"": true}",
+367,anomaly,anomaly,True,349,5123,5472,0.000098,0.002049,"{""label"": ""anomaly"", ""anomaly"": true}",
+368,anomaly,anomaly,True,10663,1560,12223,0.002986,0.000624,"{""label"": ""anomaly"", ""anomaly"": true}",
+369,anomaly,anomaly,True,417,890,1307,0.000117,0.000356,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+370,anomaly,anomaly,True,377,1859,2236,0.000106,0.000744,"{""label"": ""anomaly"", ""anomaly"": true}",
+371,anomaly,anomaly,True,417,6225,6642,0.000117,0.002490,"{""label"": ""anomaly"", ""anomaly"": true}",
+372,anomaly,anomaly,True,417,2513,2930,0.000117,0.001005,"{""label"": ""anomaly"", ""anomaly"": true, ""sequence"": [63, 92, 128, 42, 129, 130, 131, 132, 133, 134, 135, 117, 140, 136, 139, 138, 137, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 118, 119, 120, 115, 116, 117, 141, 118, 119, 120, 115, 116, 118, 121, 122, 123, 124]}",
+373,anomaly,anomaly,True,417,1640,2057,0.000117,0.000656,"{""label"": ""anomaly"", ""anomaly"": true}",
+374,anomaly,anomaly,True,409,2910,3319,0.000115,0.001164,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+375,anomaly,anomaly,True,417,4475,4892,0.000117,0.001790,"{""label"": ""anomaly"", ""anomaly"": true}",
+376,anomaly,anomaly,True,689,467,1156,0.000193,0.000187,"{""label"": ""anomaly"", ""anomaly"": true}",
+377,anomaly,anomaly,True,417,4516,4933,0.000117,0.001806,"{""label"": ""anomaly"", ""anomaly"": true}",
+378,anomaly,anomaly,True,417,6369,6786,0.000117,0.002548,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+379,anomaly,anomaly,True,417,2958,3375,0.000117,0.001183,"{""label"": ""anomaly"", ""anomaly"": true}",
+380,anomaly,anomaly,True,409,897,1306,0.000115,0.000359,"{""label"": ""anomaly"", ""anomaly"": true}",
+381,anomaly,anomaly,True,417,1187,1604,0.000117,0.000475,"{""label"": ""anomaly"", ""anomaly"": true}",
+382,anomaly,anomaly,True,429,3659,4088,0.000120,0.001464,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+383,anomaly,anomaly,True,429,3202,3631,0.000120,0.001281,"{""label"": ""anomaly"", ""anomaly"": true}",
+384,anomaly,anomaly,True,325,1503,1828,0.000091,0.000601,"{""label"": ""anomaly"", ""anomaly"": true}",
+385,anomaly,anomaly,True,417,1536,1953,0.000117,0.000614,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+386,anomaly,anomaly,True,417,695,1112,0.000117,0.000278,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+387,anomaly,anomaly,True,285,4503,4788,0.000080,0.001801,"{""label"": ""anomaly"", ""anomaly"": true}",
+388,anomaly,anomaly,True,417,2241,2658,0.000117,0.000896,"{""label"": ""anomaly"", ""anomaly"": true}",
+389,anomaly,anomaly,True,441,5755,6196,0.000123,0.002302,"{""label"": ""anomaly"", ""anomaly"": true}",
+390,anomaly,anomaly,True,441,2084,2525,0.000123,0.000834,"{""label"": ""anomaly"", ""anomaly"": true}",
+391,anomaly,anomaly,True,321,2191,2512,0.000090,0.000876,"{""label"": ""anomaly"", ""anomaly"": true}",
+392,anomaly,anomaly,True,441,760,1201,0.000123,0.000304,"{""label"":""anomaly"",""anomaly"":true}",
+393,anomaly,anomaly,True,441,1373,1814,0.000123,0.000549,"{""label"": ""anomaly"", ""anomaly"": true}",
+394,anomaly,anomaly,True,301,1248,1549,0.000084,0.000499,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+395,anomaly,anomaly,True,253,3137,3390,0.000071,0.001255,"{""label"": ""anomaly"", ""anomaly"": true}",
+396,anomaly,anomaly,True,277,3372,3649,0.000078,0.001349,"{""label"": ""anomaly"", ""anomaly"": true}",
+397,anomaly,anomaly,True,441,4178,4619,0.000123,0.001671,"{""label"": ""anomaly"", ""anomaly"": true}",
+398,anomaly,anomaly,True,441,3157,3598,0.000123,0.001263,"{""label"": ""anomaly"", ""anomaly"": true}",
+399,anomaly,anomaly,True,513,791,1304,0.000144,0.000316,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+400,anomaly,anomaly,True,4614,1055,5669,0.001292,0.000422,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+401,anomaly,anomaly,True,277,1863,2140,0.000078,0.000745,"{""label"": ""anomaly"", ""anomaly"": true}",
+402,anomaly,anomaly,True,441,443,884,0.000123,0.000177,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+403,anomaly,anomaly,True,441,1050,1491,0.000123,0.000420,"{""label"": ""anomaly"", ""anomaly"": true}",
+404,anomaly,anomaly,True,441,776,1217,0.000123,0.000310,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+405,anomaly,anomaly,True,453,1384,1837,0.000127,0.000554,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+406,anomaly,anomaly,True,373,2907,3280,0.000104,0.001163,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+407,anomaly,anomaly,True,441,737,1178,0.000123,0.000295,"{""label"": ""anomaly"", ""anomaly"": true}",
+408,anomaly,anomaly,True,333,7598,7931,0.000093,0.003039,"{""label"": ""anomaly"", ""anomaly"": true}",
+409,anomaly,anomaly,True,453,1821,2274,0.000127,0.000728,"{""label"": ""anomaly"", ""anomaly"": true}",
+410,anomaly,anomaly,True,6668,732,7400,0.001867,0.000293,"{""label"": ""anomaly"", ""anomaly"": true}",
+411,anomaly,anomaly,True,453,5813,6266,0.000127,0.002325,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+412,anomaly,anomaly,True,349,586,935,0.000098,0.000234,"{""label"": ""anomaly"", ""anomaly"": true}",
+413,anomaly,anomaly,True,581,1835,2416,0.000163,0.000734,"{""label"": ""anomaly"", ""anomaly"": true}",
+414,anomaly,anomaly,True,325,1199,1524,0.000091,0.000480,"{""label"": ""anomaly"", ""anomaly"": true}",
+415,anomaly,anomaly,True,349,859,1208,0.000098,0.000344,"{""label"": ""anomaly"", ""anomaly"": true}",
+416,anomaly,anomaly,True,453,603,1056,0.000127,0.000241,"{""label"": ""anomaly"", ""anomaly"": true}",
+417,anomaly,anomaly,True,453,994,1447,0.000127,0.000398,"{""label"": ""anomaly"", ""anomaly"": true}",
+418,anomaly,anomaly,True,453,2115,2568,0.000127,0.000846,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+419,anomaly,anomaly,True,453,2004,2457,0.000127,0.000802,"{""label"": ""anomaly"", ""anomaly"": true}",
+420,anomaly,anomaly,True,421,905,1326,0.000118,0.000362,"{""label"": ""anomaly"", ""anomaly"": true}",
+421,anomaly,anomaly,True,453,970,1423,0.000127,0.000388,"{""label"": ""anomaly"", ""anomaly"": true}",
+422,anomaly,anomaly,True,453,4001,4454,0.000127,0.001600,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+423,anomaly,anomaly,True,441,1075,1516,0.000123,0.000430,"{""label"": ""anomaly"", ""anomaly"": true}",
+424,anomaly,anomaly,True,441,2310,2751,0.000123,0.000924,"{""label"": ""anomaly"", ""anomaly"": true}",
+425,anomaly,anomaly,True,277,3696,3973,0.000078,0.001478,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+426,anomaly,anomaly,True,453,2767,3220,0.000127,0.001107,"{""label"": ""anomaly"", ""anomaly"": true}",
+427,anomaly,anomaly,True,453,1632,2085,0.000127,0.000653,"{""label"": ""anomaly"", ""anomaly"": true}",
+428,anomaly,anomaly,True,333,4398,4731,0.000093,0.001759,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+429,anomaly,normal,False,453,3324,3777,0.000127,0.001330,"{
+  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+430,anomaly,anomaly,True,397,2116,2513,0.000111,0.000846,"{""label"": ""anomaly"", ""anomaly"": true}",
+431,anomaly,anomaly,True,6425,743,7168,0.001799,0.000297,"{""label"": ""anomaly"", ""anomaly"": true}",
+432,anomaly,anomaly,True,573,1820,2393,0.000160,0.000728,"{""label"": ""anomaly"", ""anomaly"": true}",
+433,anomaly,anomaly,True,453,4545,4998,0.000127,0.001818,"{""label"": ""anomaly"", ""anomaly"": true}",
+434,anomaly,anomaly,True,453,684,1137,0.000127,0.000274,"{""label"":""anomaly"",""anomaly"":true}",
+435,anomaly,anomaly,True,453,8216,8669,0.000127,0.003286,"{""label"": ""anomaly"", ""anomaly"": true}",
+436,anomaly,anomaly,True,433,2185,2618,0.000121,0.000874,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+437,anomaly,anomaly,True,9198,1082,10280,0.002575,0.000433,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+438,anomaly,anomaly,True,349,651,1000,0.000098,0.000260,"{""label"": ""anomaly"", ""anomaly"": true}",
+439,anomaly,anomaly,True,417,981,1398,0.000117,0.000392,"{""label"": ""anomaly"", ""anomaly"": true}",
+440,anomaly,anomaly,True,429,1588,2017,0.000120,0.000635,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+441,anomaly,anomaly,True,417,566,983,0.000117,0.000226,"{""label"": ""anomaly"", ""anomaly"": true}",
+442,anomaly,anomaly,True,417,2627,3044,0.000117,0.001051,"{""label"": ""anomaly"", ""anomaly"": true}",
+443,anomaly,anomaly,True,417,2643,3060,0.000117,0.001057,"{""label"": ""anomaly"", ""anomaly"": true}",
+444,anomaly,anomaly,True,417,2893,3310,0.000117,0.001157,"{""label"": ""anomaly"", ""anomaly"": true}",
+445,anomaly,anomaly,True,417,3685,4102,0.000117,0.001474,"{""label"": ""anomaly"", ""anomaly"": true}",
+446,anomaly,anomaly,True,349,735,1084,0.000098,0.000294,"{""label"":""anomaly"",""anomaly"":true}",
+447,anomaly,anomaly,True,409,682,1091,0.000115,0.000273,"{""label"": ""anomaly"", ""anomaly"": true}",
+448,anomaly,anomaly,True,417,1947,2364,0.000117,0.000779,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+449,anomaly,anomaly,True,629,1318,1947,0.000176,0.000527,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+450,anomaly,anomaly,True,417,4219,4636,0.000117,0.001688,"{""label"":""anomaly"",""anomaly"":true}",
+451,anomaly,anomaly,True,417,2629,3046,0.000117,0.001052,"{""label"": ""anomaly"", ""anomaly"": true}",
+452,anomaly,anomaly,True,417,2245,2662,0.000117,0.000898,"{""label"": ""anomaly"", ""anomaly"": true}",
+453,anomaly,anomaly,True,417,1327,1744,0.000117,0.000531,"{""label"":""anomaly"",""anomaly"":true}",
+454,anomaly,anomaly,True,429,1575,2004,0.000120,0.000630,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+455,anomaly,anomaly,True,429,1037,1466,0.000120,0.000415,"{""label"": ""anomaly"", ""anomaly"": true}",
+456,anomaly,anomaly,True,325,1073,1398,0.000091,0.000429,"{""label"": ""anomaly"", ""anomaly"": true}",
+457,anomaly,anomaly,True,429,1912,2341,0.000120,0.000765,"{""label"": ""anomaly"", ""anomaly"": true}",
+458,anomaly,anomaly,True,409,790,1199,0.000115,0.000316,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+459,anomaly,anomaly,True,409,3346,3755,0.000115,0.001338,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+460,anomaly,anomaly,True,377,5211,5588,0.000106,0.002084,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+461,anomaly,anomaly,True,429,725,1154,0.000120,0.000290,"{""label"": ""anomaly"", ""anomaly"": true}",
+462,anomaly,anomaly,True,429,2105,2534,0.000120,0.000842,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+463,anomaly,anomaly,True,277,3545,3822,0.000078,0.001418,"{""label"": ""anomaly"", ""anomaly"": true}",
+464,anomaly,anomaly,True,429,991,1420,0.000120,0.000396,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+465,anomaly,anomaly,True,353,978,1331,0.000099,0.000391,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+466,anomaly,anomaly,True,429,1216,1645,0.000120,0.000486,"{""label"": ""anomaly"", ""anomaly"": true}",
+467,anomaly,anomaly,True,429,1105,1534,0.000120,0.000442,"{""label"": ""anomaly"", ""anomaly"": true}",
+468,anomaly,anomaly,True,409,1436,1845,0.000115,0.000574,"{""label"": ""anomaly"", ""anomaly"": true}",
+469,anomaly,anomaly,True,277,1116,1393,0.000078,0.000446,"{""label"": ""anomaly"", ""anomaly"": true}",
+470,anomaly,anomaly,True,429,847,1276,0.000120,0.000339,"{""label"": ""anomaly"", ""anomaly"": true}",
+471,anomaly,anomaly,True,429,4572,5001,0.000120,0.001829,"{""label"": ""anomaly"", ""anomaly"": true}",
+472,anomaly,anomaly,True,409,4400,4809,0.000115,0.001760,"{""label"": ""anomaly"", ""anomaly"": true}",
+473,anomaly,normal,False,7121,579,7700,0.001994,0.000232,"{
+  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+474,anomaly,anomaly,True,541,1077,1618,0.000151,0.000431,"{""label"": ""anomaly"", ""anomaly"": true}",
+475,anomaly,anomaly,True,301,973,1274,0.000084,0.000389,"{""label"": ""anomaly"", ""anomaly"": true}",
+476,anomaly,anomaly,True,429,1326,1755,0.000120,0.000530,"{""label"": ""anomaly"", ""anomaly"": true}",
+477,anomaly,normal,False,381,1512,1893,0.000107,0.000605,"{""label"": ""normal"", ""anomaly"": false}",
+478,anomaly,anomaly,True,417,1473,1890,0.000117,0.000589,"{""label"": ""anomaly"", ""anomaly"": true}",
+479,anomaly,anomaly,True,237,2534,2771,0.000066,0.001014,"{""label"": ""anomaly"", ""anomaly"": true}",
+480,anomaly,anomaly,True,429,4776,5205,0.000120,0.001910,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+481,anomaly,anomaly,True,429,1439,1868,0.000120,0.000576,"{""label"": ""anomaly"", ""anomaly"": true}",
+482,anomaly,anomaly,True,349,1190,1539,0.000098,0.000476,"{""label"": ""anomaly"", ""anomaly"": true}",
+483,anomaly,anomaly,True,417,1531,1948,0.000117,0.000612,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+484,anomaly,anomaly,True,429,768,1197,0.000120,0.000307,"{""label"": ""anomaly"", ""anomaly"": true}",
+485,anomaly,anomaly,True,429,1936,2365,0.000120,0.000774,"{""label"": ""anomaly"", ""anomaly"": true}",
+486,anomaly,anomaly,True,429,2412,2841,0.000120,0.000965,"{""label"": ""anomaly"", ""anomaly"": true}",
+487,anomaly,anomaly,True,565,1911,2476,0.000158,0.000764,"{""label"": ""anomaly"", ""anomaly"": true}",
+488,anomaly,anomaly,True,5048,827,5875,0.001413,0.000331,"{""label"": ""anomaly"", ""anomaly"": true}",
+489,anomaly,anomaly,True,325,1005,1330,0.000091,0.000402,"{""label"": ""anomaly"", ""anomaly"": true}",
+490,anomaly,anomaly,True,429,619,1048,0.000120,0.000248,"{""label"": ""anomaly"", ""anomaly"": true}",
+491,anomaly,anomaly,True,417,1627,2044,0.000117,0.000651,"{""label"": ""anomaly"", ""anomaly"": true}",
+492,anomaly,anomaly,True,8474,651,9125,0.002373,0.000260,"{""label"": ""anomaly"", ""anomaly"": true}",
+493,anomaly,anomaly,True,429,1330,1759,0.000120,0.000532,"{""label"": ""anomaly"", ""anomaly"": true}",
+494,anomaly,normal,False,325,2597,2922,0.000091,0.001039,"{  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+495,anomaly,anomaly,True,429,1926,2355,0.000120,0.000770,"{""label"":""anomaly"",""anomaly"":true}",
+496,anomaly,anomaly,True,429,2908,3337,0.000120,0.001163,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+497,anomaly,anomaly,True,429,6818,7247,0.000120,0.002727,"{""label"": ""anomaly"", ""anomaly"": true}",
+498,anomaly,anomaly,True,301,496,797,0.000084,0.000198,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+499,anomaly,anomaly,True,417,734,1151,0.000117,0.000294,"{""label"": ""anomaly"", ""anomaly"": true}",
+500,anomaly,anomaly,True,237,487,724,0.000066,0.000195,"{""label"": ""anomaly"", ""anomaly"": true}",
+501,anomaly,anomaly,True,429,3285,3714,0.000120,0.001314,"{""label"": ""anomaly"", ""anomaly"": true}",
+502,anomaly,anomaly,True,429,5366,5795,0.000120,0.002146,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+503,anomaly,anomaly,True,417,1679,2096,0.000117,0.000672,"{""label"": ""anomaly"", ""anomaly"": true}",
+504,anomaly,anomaly,True,665,698,1363,0.000186,0.000279,"{""label"": ""anomaly"", ""anomaly"": true}",
+505,anomaly,anomaly,True,325,3656,3981,0.000091,0.001462,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+506,anomaly,anomaly,True,301,2303,2604,0.000084,0.000921,"{""label"": ""anomaly"", ""anomaly"": true}",
+507,anomaly,anomaly,True,201,646,847,0.000056,0.000258,"{""label"": ""anomaly"", ""anomaly"": true}",
+508,anomaly,anomaly,True,657,806,1463,0.000184,0.000322,"{""label"": ""anomaly"", ""anomaly"": true}",
+509,anomaly,anomaly,True,429,3041,3470,0.000120,0.001216,"{""label"": ""anomaly"", ""anomaly"": true}",
+510,anomaly,anomaly,True,1013,1093,2106,0.000284,0.000437,"{""label"": ""anomaly"", ""anomaly"": true}",
+511,anomaly,anomaly,True,429,1034,1463,0.000120,0.000414,"{""label"": ""anomaly"", ""anomaly"": true}",
+512,anomaly,anomaly,True,409,985,1394,0.000115,0.000394,"{""label"": ""anomaly"", ""anomaly"": true, ""confidence"": 0.987, ""features"": [{""name"": ""event_repetition_count"", ""value"": 5}, {""name"": ""last_event"", ""value"": 122}, {""name"": ""sequence_length"", ""value"": 54}] }",
+513,anomaly,anomaly,True,309,1997,2306,0.000087,0.000799,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+514,anomaly,anomaly,True,13531,756,14287,0.003789,0.000302,"{""label"": ""anomaly"", ""anomaly"": true}",
+515,anomaly,anomaly,True,429,797,1226,0.000120,0.000319,"{""label"": ""anomaly"", ""anomaly"": true}",
+516,anomaly,anomaly,True,429,1823,2252,0.000120,0.000729,"{""label"": ""anomaly"", ""anomaly"": true}",
+517,anomaly,anomaly,True,357,839,1196,0.000100,0.000336,"{""label"": ""anomaly"", ""anomaly"": true}",
+518,anomaly,anomaly,True,325,1704,2029,0.000091,0.000682,"{""label"": ""anomaly"", ""anomaly"": true}",
+519,anomaly,anomaly,True,325,654,979,0.000091,0.000262,"{""label"": ""anomaly"", ""anomaly"": true}",
+520,anomaly,anomaly,True,429,933,1362,0.000120,0.000373,"{""label"": ""anomaly"", ""anomaly"": true}",
+521,anomaly,anomaly,True,417,1237,1654,0.000117,0.000495,"{""label"": ""anomaly"", ""anomaly"": true}",
+522,anomaly,anomaly,True,429,3942,4371,0.000120,0.001577,"{""label"": ""anomaly"", ""anomaly"": true}",
+523,anomaly,anomaly,True,533,492,1025,0.000149,0.000197,"{""label"": ""anomaly"", ""anomaly"": true}",
+524,anomaly,anomaly,True,429,10945,11374,0.000120,0.004378,"{""label"": ""anomaly"", ""anomaly"": true}",
+525,anomaly,anomaly,True,429,2576,3005,0.000120,0.001030,"{""label"": ""anomaly"", ""anomaly"": true}",
+526,anomaly,anomaly,True,325,815,1140,0.000091,0.000326,"{""label"": ""anomaly"", ""anomaly"": true}",
+527,anomaly,anomaly,True,429,927,1356,0.000120,0.000371,"{""label"": ""anomaly"", ""anomaly"": true}",
+528,anomaly,anomaly,True,429,1041,1470,0.000120,0.000416,"{""label"": ""anomaly"", ""anomaly"": true}",
+529,anomaly,anomaly,True,2652,1044,3696,0.000743,0.000418,"{""label"": ""anomaly"", ""anomaly"": true}",
+530,anomaly,anomaly,True,429,4151,4580,0.000120,0.001660,"{""label"": ""anomaly"", ""anomaly"": true}",
+531,anomaly,normal,False,429,5733,6162,0.000120,0.002293,"{
+  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+532,anomaly,anomaly,True,429,795,1224,0.000120,0.000318,"{""label"": ""anomaly"", ""anomaly"": true}",
+533,anomaly,anomaly,True,429,1416,1845,0.000120,0.000566,"{""label"": ""anomaly"", ""anomaly"": true}",
+534,anomaly,anomaly,True,349,5237,5586,0.000098,0.002095,"{""label"": ""anomaly"", ""anomaly"": true}",
+535,anomaly,anomaly,True,481,1736,2217,0.000135,0.000694,"{""label"": ""anomaly"", ""anomaly"": true}",
+536,anomaly,anomaly,True,429,2196,2625,0.000120,0.000878,"{""label"": ""anomaly"", ""anomaly"": true}",
+537,anomaly,anomaly,True,381,935,1316,0.000107,0.000374,"{""label"": ""anomaly"", ""anomaly"": true}",
+538,anomaly,anomaly,True,429,1049,1478,0.000120,0.000420,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+539,anomaly,anomaly,True,429,1592,2021,0.000120,0.000637,"{""label"": ""anomaly"", ""anomaly"": true}",
+540,anomaly,anomaly,True,1442,507,1949,0.000404,0.000203,"{""label"": ""anomaly"", ""anomaly"": true}",
+541,anomaly,anomaly,True,429,2266,2695,0.000120,0.000906,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+542,anomaly,anomaly,True,771,363,1134,0.000216,0.000145,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+543,anomaly,anomaly,True,429,958,1387,0.000120,0.000383,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+544,anomaly,anomaly,True,429,12179,12608,0.000120,0.004872,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+545,anomaly,anomaly,True,429,3653,4082,0.000120,0.001461,"{""label"": ""anomaly"", ""anomaly"": true}",
+546,anomaly,anomaly,True,429,6573,7002,0.000120,0.002629,"{""label"": ""anomaly"", ""anomaly"": true}",
+547,anomaly,anomaly,True,429,670,1099,0.000120,0.000268,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+548,anomaly,anomaly,True,4371,489,4860,0.001224,0.000196,"{""label"": ""anomaly"", ""anomaly"": true}",
+549,anomaly,anomaly,True,429,1348,1777,0.000120,0.000539,"{""label"": ""anomaly"", ""anomaly"": true}",
+550,anomaly,anomaly,True,349,856,1205,0.000098,0.000342,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+551,anomaly,anomaly,True,429,3256,3685,0.000120,0.001302,"{""label"": ""anomaly"", ""anomaly"": true}",
+552,anomaly,anomaly,True,429,5867,6296,0.000120,0.002347,"{""label"": ""anomaly"", ""anomaly"": true}",
+553,anomaly,anomaly,True,249,1231,1480,0.000070,0.000492,"{""label"": ""anomaly"", ""anomaly"": true}",
+554,anomaly,anomaly,True,429,1225,1654,0.000120,0.000490,"{""label"": ""anomaly"", ""anomaly"": true}",
+555,anomaly,anomaly,True,409,2477,2886,0.000115,0.000991,"{""label"": ""anomaly"", ""anomaly"": true}",
+556,anomaly,anomaly,True,381,3007,3388,0.000107,0.001203,"{""label"": ""anomaly"", ""anomaly"": true}",
+557,anomaly,anomaly,True,429,1585,2014,0.000120,0.000634,"{""label"": ""anomaly"", ""anomaly"": true}",
+558,anomaly,anomaly,True,429,9306,9735,0.000120,0.003722,"{""label"": ""anomaly"", ""anomaly"": true}",
+559,anomaly,anomaly,True,10294,684,10978,0.002882,0.000274,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+560,anomaly,anomaly,True,485,2438,2923,0.000136,0.000975,"{""label"":""anomaly"",""anomaly"":true}",
+561,anomaly,anomaly,True,429,2826,3255,0.000120,0.001130,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+562,anomaly,anomaly,True,377,1065,1442,0.000106,0.000426,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+563,anomaly,anomaly,True,301,1437,1738,0.000084,0.000575,"{""label"": ""anomaly"", ""anomaly"": true}",
+564,anomaly,anomaly,True,429,589,1018,0.000120,0.000236,"{""label"": ""anomaly"", ""anomaly"": true}",
+565,anomaly,anomaly,True,429,1593,2022,0.000120,0.000637,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+566,anomaly,anomaly,True,309,700,1009,0.000087,0.000280,"{""label"": ""anomaly"", ""anomaly"": true}",
+567,anomaly,anomaly,True,237,2359,2596,0.000066,0.000944,"{""label"": ""anomaly"", ""anomaly"": true}",
+568,anomaly,anomaly,True,453,597,1050,0.000127,0.000239,"{""label"": ""anomaly"", ""anomaly"": true}",
+569,anomaly,anomaly,True,453,1720,2173,0.000127,0.000688,"{""label"": ""anomaly"", ""anomaly"": true}",
+570,anomaly,anomaly,True,453,637,1090,0.000127,0.000255,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+571,anomaly,anomaly,True,333,1207,1540,0.000093,0.000483,"{
+  ""label"": ""anomaly"", ""anomaly"": true
+}",
+572,anomaly,anomaly,True,521,839,1360,0.000146,0.000336,"{""label"": ""anomaly"", ""anomaly"": true}",
+573,anomaly,anomaly,True,237,3722,3959,0.000066,0.001489,"{""label"": ""anomaly"", ""anomaly"": true}",
+574,anomaly,anomaly,True,3384,829,4213,0.000948,0.000332,"{""label"": ""anomaly"", ""anomaly"": true}",
+575,anomaly,anomaly,True,453,575,1028,0.000127,0.000230,"{""label"": ""anomaly"", ""anomaly"": true}",
+576,anomaly,anomaly,True,349,1335,1684,0.000098,0.000534,"{""label"": ""anomaly"", ""anomaly"": true}",
+577,anomaly,anomaly,True,453,4955,5408,0.000127,0.001982,"{""label"": ""anomaly"", ""anomaly"": true}",
+578,anomaly,anomaly,True,453,953,1406,0.000127,0.000381,"{""label"": ""anomaly"", ""anomaly"": true}",
+579,anomaly,anomaly,True,453,1435,1888,0.000127,0.000574,"{""label"": ""anomaly"", ""anomaly"": true}",
+580,anomaly,anomaly,True,453,930,1383,0.000127,0.000372,"{""label"": ""anomaly"", ""anomaly"": true}",
+581,anomaly,anomaly,True,453,1578,2031,0.000127,0.000631,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+582,anomaly,anomaly,True,441,4512,4953,0.000123,0.001805,"{""label"": ""anomaly"", ""anomaly"": true}",
+583,anomaly,anomaly,True,421,2675,3096,0.000118,0.001070,"{""label"": ""anomaly"", ""anomaly"": true}",
+584,anomaly,normal,False,441,4788,5229,0.000123,0.001915,"{
+  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+585,anomaly,anomaly,True,349,681,1030,0.000098,0.000272,"{""label"": ""anomaly"", ""anomaly"": true}",
+586,anomaly,anomaly,True,585,1612,2197,0.000164,0.000645,"{""label"": ""anomaly"", ""anomaly"": true}",
+587,anomaly,anomaly,True,6239,686,6925,0.001747,0.000274,"{""label"": ""anomaly"", ""anomaly"": true}",
+588,anomaly,anomaly,True,441,4918,5359,0.000123,0.001967,"{""label"": ""anomaly"", ""anomaly"": true}",
+589,anomaly,anomaly,True,333,2439,2772,0.000093,0.000976,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+590,anomaly,anomaly,True,433,1585,2018,0.000121,0.000634,"{""label"": ""anomaly"", ""anomaly"": true}",
+591,anomaly,anomaly,True,441,1363,1804,0.000123,0.000545,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+592,anomaly,anomaly,True,441,10488,10929,0.000123,0.004195,"{""label"": ""anomaly"", ""anomaly"": true}",
+593,anomaly,anomaly,True,441,1217,1658,0.000123,0.000487,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+594,anomaly,anomaly,True,453,2948,3401,0.000127,0.001179,"{""label"": ""anomaly"", ""anomaly"": true}",
+595,anomaly,anomaly,True,453,8947,9400,0.000127,0.003579,"{""label"": ""anomaly"", ""anomaly"": true}",
+596,anomaly,anomaly,True,441,2351,2792,0.000123,0.000940,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+597,anomaly,anomaly,True,417,1206,1623,0.000117,0.000482,"{""label"": ""anomaly"", ""anomaly"": true}",
+598,anomaly,anomaly,True,417,899,1316,0.000117,0.000360,"{""label"":""anomaly"",""anomaly"":true}",
+599,anomaly,anomaly,True,417,4596,5013,0.000117,0.001838,"{""label"": ""anomaly"", ""anomaly"": true}",
+600,anomaly,anomaly,True,417,1166,1583,0.000117,0.000466,"{""label"": ""anomaly"", ""anomaly"": true}",
+601,anomaly,anomaly,True,369,1182,1551,0.000103,0.000473,"{""label"": ""anomaly"", ""anomaly"": true}",
+602,anomaly,anomaly,True,417,1992,2409,0.000117,0.000797,"{""label"": ""anomaly"", ""anomaly"": true}",
+603,anomaly,anomaly,True,349,1634,1983,0.000098,0.000654,"{""label"": ""anomaly"", ""anomaly"": true}",
+604,anomaly,anomaly,True,417,1253,1670,0.000117,0.000501,"{""label"": ""anomaly"", ""anomaly"": true}",
+605,anomaly,anomaly,True,417,1145,1562,0.000117,0.000458,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+606,anomaly,anomaly,True,417,4875,5292,0.000117,0.001950,"{""label"": ""anomaly"", ""anomaly"": true}",
+607,anomaly,anomaly,True,417,1213,1630,0.000117,0.000485,"{""label"": ""anomaly"", ""anomaly"": true}",
+608,anomaly,anomaly,True,461,1597,2058,0.000129,0.000639,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+609,anomaly,anomaly,True,453,1250,1703,0.000127,0.000500,"{""label"": ""anomaly"", ""anomaly"": true}",
+610,anomaly,anomaly,True,8096,4466,12562,0.002267,0.001786,"{""label"": ""anomaly"", ""anomaly"": true}",
+611,anomaly,anomaly,True,441,4688,5129,0.000123,0.001875,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+612,anomaly,anomaly,True,1369,9430,10799,0.000383,0.003772,"{""label"": ""anomaly"", ""anomaly"": true}",
+613,anomaly,anomaly,True,631,298,929,0.000177,0.000119,"{""label"": ""anomaly"", ""anomaly"": true}",
+614,anomaly,anomaly,True,253,2311,2564,0.000071,0.000924,"{""label"": ""anomaly"", ""anomaly"": true}",
+615,anomaly,anomaly,True,441,552,993,0.000123,0.000221,"{""label"": ""anomaly"", ""anomaly"": true}",
+616,anomaly,anomaly,True,321,754,1075,0.000090,0.000302,"{""label"": ""anomaly"", ""anomaly"": true}",
+617,anomaly,normal,False,441,7335,7776,0.000123,0.002934,"{  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+618,anomaly,anomaly,True,441,1024,1465,0.000123,0.000410,"{""label"": ""anomaly"", ""anomaly"": true}",
+619,anomaly,normal,False,261,4967,5228,0.000073,0.001987,"{""label"": ""normal"", ""anomaly"": false}",
+620,anomaly,anomaly,True,441,2179,2620,0.000123,0.000872,"{""label"": ""anomaly"", ""anomaly"": true}",
+621,anomaly,anomaly,True,193,1149,1342,0.000054,0.000460,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+622,anomaly,anomaly,True,441,878,1319,0.000123,0.000351,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+623,anomaly,anomaly,True,4774,1137,5911,0.001337,0.000455,"{""label"": ""anomaly"", ""anomaly"": true}",
+624,anomaly,anomaly,True,509,5955,6464,0.000143,0.002382,"{""label"": ""anomaly"", ""anomaly"": true}",
+625,anomaly,anomaly,True,631,426,1057,0.000177,0.000170,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+626,anomaly,anomaly,True,441,2319,2760,0.000123,0.000928,"{""label"": ""anomaly"", ""anomaly"": true}",
+627,anomaly,anomaly,True,441,1886,2327,0.000123,0.000754,"{""label"": ""anomaly"", ""anomaly"": true}",
+628,anomaly,anomaly,True,441,5014,5455,0.000123,0.002006,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+629,anomaly,anomaly,True,369,887,1256,0.000103,0.000355,"{""label"": ""anomaly"", ""anomaly"": true}",
+630,anomaly,anomaly,True,4742,978,5720,0.001328,0.000391,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+631,anomaly,anomaly,True,417,1514,1931,0.000117,0.000606,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+632,anomaly,anomaly,True,477,2370,2847,0.000134,0.000948,"{""label"": ""anomaly"", ""anomaly"": true}",
+633,anomaly,anomaly,True,417,3711,4128,0.000117,0.001484,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+634,anomaly,anomaly,True,417,1422,1839,0.000117,0.000569,"{""label"": ""anomaly"", ""anomaly"": true}",
+635,anomaly,anomaly,True,417,9194,9611,0.000117,0.003678,"{""label"": ""anomaly"", ""anomaly"": true}",
+636,anomaly,anomaly,True,417,2574,2991,0.000117,0.001030,"{""label"": ""anomaly"", ""anomaly"": true}",
+637,anomaly,anomaly,True,357,2838,3195,0.000100,0.001135,"{""label"": ""anomaly"", ""anomaly"": true}",
+638,anomaly,anomaly,True,429,587,1016,0.000120,0.000235,"{""label"": ""anomaly"", ""anomaly"": true}",
+639,anomaly,anomaly,True,417,766,1183,0.000117,0.000306,"{""label"": ""anomaly"", ""anomaly"": true}",
+640,anomaly,anomaly,True,417,3714,4131,0.000117,0.001486,"{""label"": ""anomaly"", ""anomaly"": true}",
+641,anomaly,anomaly,True,417,628,1045,0.000117,0.000251,"{""label"":""anomaly"",""anomaly"":true}",
+642,anomaly,anomaly,True,417,5678,6095,0.000117,0.002271,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+643,anomaly,anomaly,True,301,828,1129,0.000084,0.000331,"{""label"": ""anomaly"", ""anomaly"": true}",
+644,anomaly,anomaly,True,429,1177,1606,0.000120,0.000471,"{""label"": ""anomaly"", ""anomaly"": true}",
+645,anomaly,anomaly,True,253,3213,3466,0.000071,0.001285,"{""label"": ""anomaly"", ""anomaly"": true}",
+646,anomaly,anomaly,True,429,966,1395,0.000120,0.000386,"{""label"": ""anomaly"", ""anomaly"": true}",
+647,anomaly,anomaly,True,429,1783,2212,0.000120,0.000713,"{""label"": ""anomaly"", ""anomaly"": true}",
+648,anomaly,normal,False,409,6316,6725,0.000115,0.002526,"{""label"": ""normal"", ""anomaly"": false}",
+649,anomaly,anomaly,True,369,1604,1973,0.000103,0.000642,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+650,anomaly,anomaly,True,417,1304,1721,0.000117,0.000522,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+651,anomaly,anomaly,True,485,846,1331,0.000136,0.000338,"{""label"": ""anomaly"", ""anomaly"": true}",
+652,anomaly,normal,False,417,9169,9586,0.000117,0.003668,"{
+  ""label"": ""normal"",
+  ""anomaly"": false
+}",
+653,anomaly,anomaly,True,417,1342,1759,0.000117,0.000537,"{""label"":""anomaly"",""anomaly"":true,""timestamp"":null,""session_id"":null,""domain"":null,""event_sequence"":""63 92 128 42 129 130 131 132 133 134 135 117 140 136 139 138 137 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 141 118 119 120 115 116 118 121 122 123 124"", ""timestamp"":null, ""data"":{""event_sequence"": ""63 92 128 42 129 130 131 132 133 134 135 117 140 136 139 138 137 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 118 119 120 115 116 117 141 118 119 120 115 116 118 121 122 123 124"", ""detection_rule"":""Repeating pattern detection matching:\n- Serialization of multi-event patterns without progression\n- Haystack of similar events (N>3 repetitions)\n- Divergent from expected event frequency progression\n- Event chains longer than allowed by business process constraints (3 repetitions of 5+ similar events)""}, ""timestamp"":""2023-08-05T14:23:17Z"", ""children"":[]}",
+654,anomaly,anomaly,True,417,1910,2327,0.000117,0.000764,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+655,anomaly,anomaly,True,417,3741,4158,0.000117,0.001496,"{""label"": ""anomaly"", ""anomaly"": true}",
+656,anomaly,anomaly,True,417,2890,3307,0.000117,0.001156,"{""label"": ""anomaly"", ""anomaly"": true}",
+657,anomaly,anomaly,True,361,5419,5780,0.000101,0.002168,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+658,anomaly,anomaly,True,417,1976,2393,0.000117,0.000790,"{""label"": ""anomaly"", ""anomaly"": true}",
+659,anomaly,anomaly,True,261,3130,3391,0.000073,0.001252,"{""label"": ""anomaly"", ""anomaly"": true}",
+660,anomaly,anomaly,True,253,6344,6597,0.000071,0.002538,"{""label"": ""anomaly"", ""anomaly"": true}",
+661,anomaly,anomaly,True,277,2608,2885,0.000078,0.001043,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+662,anomaly,anomaly,True,429,2035,2464,0.000120,0.000814,"{""label"": ""anomaly"", ""anomaly"": true}",
+663,anomaly,anomaly,True,12107,820,12927,0.003390,0.000328,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+664,anomaly,anomaly,True,477,9585,10062,0.000134,0.003834,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  , ""explanation"": ""The sequence exhibits abrupt and irregular fluctuations in event type IDs, such as large jumps (e.g., 63 → 92 → 190 → 42) and non-sequential patterns, which deviate from a normal temporal or sequential pattern typical of Hadoop operations. These inconsistencies suggest potential underlying faults like disk failures, machine downtime, or network issues.""
+  , ""reasoning_steps"": [
+    ""Observed inconsistent and erratic changes in event IDs (e.g., sharp drops like 190 → 42, 250 → 159)."",
+    ""Repetition of high-value IDs (e.g., multiple 181, 182, 160, 161) suggests possible unresolved faults."",
+    ""No clear directional trend or cyclical stability present in the sequence."", 
+    ""Anomaly classification aligns with deviations indicative of system instability as described in the problem statement.""
+]
+  , ""additional_analysis"": {
+    ""event_distribution"": [
+      {
+        ""id"": ""160"",
+        ""count"": 5,
+        ""context"": ""Repeated in a bounded loop with 161, 164, 181, 182."",
+        ""impact"": ""Normal within a stable sub-sequence but highlights irregular transitions elsewhere.""
+      },
+      {
+        ""id"": ""250"",
+        ""count"": 2,
+        ""context"": ""Consecutive repetitions followed by abrupt drop to 159."",
+        ""impact"": ""Potential indicator of resource saturation (disk full) or process hang."",
+        ""anomaly_level"": ""high""
+      },
+      {
+        ""id"": ""184"",
+        ""count"": 1,
+        ""context"": ""Unexpected high ID after a sequence of 160-163."",
+        ""impact"": ""Disruption in expected cyclic pattern of IDs.""
+      },
+      {
+        ""id"": ""145"",
+        ""count"": 1,
+        ""context"": ""Sudden drop from 186 to 145 indicates loss of expected progression."",
+        ""impact"": ""System instability or restart event.""
+      }
+    ]
+  }
+  , ""confidence_score"": 0.92
+  , ""final_decision"": ""anomaly""
+  , ""timestamp"": ""2023-08-15T10:30:45Z""
+  , ""reference_datasets"": {
+    ""normal_hadoop_logs"": {
+      ""avg_sequence_variance"": 0.15,
+      ""max_id"": 200,
+      ""pattern_examples"": [
+        ""monotonic ascending/descending sequences"",
+        ""fixed repeating loops (e.g., 160-161-164-181-182)"",
+        ""no abrupt jumps between IDs""
+      ]
+    },
+    ""anomalous_hadoop_logs"": {
+      ""avg_sequence_variance"": 0.45,
+      ""max_id"": 256,
+      ""pattern_examples"": [
+        ""unexpected gaps in event IDs"",
+        ""repetitions outside expected loops"",
+        ""extreme fluctuations (e.g., +50/+100 jumps)""
+      ]
+    }
+  }
+  , ""summary"": ""The sequence shows erratic fluctuations and high variance in event type IDs, including abrupt jumps and unexpected repetitions, which are statistical outliers compared to normal Hadoop operation patterns. These deviations strongly suggest an abnormal event, warranting further investigation into system faults.""
+  , ""confidence_thresholds_used"": {
+    ""variance"": 0.3,
+    ""repetition_in_frequency"": 0.2,
+    ""abrupt_jump_threshold"": 50
+  }
+  , ""timestamp"": ""2023-08-15T10:30:45Z""
+  , ""reference_datasets"": {
+    ""normal_hadoop_logs"": {
+      ""avg_sequence_variance"": 0.15,
+      ""max_id"": 200,
+      ""pattern_examples"": [
+        ""monotonic ascending/descending sequences"",
+        ""fixed repeating loops (e.g., 160-161-164-181-182)"",
+        ""no abrupt jumps between IDs""
+      ]
+    },
+    ""anomalous_hadoop_logs"": {
+      ""avg_sequence_variance"": 0.45,
+      ""max_id"": 256,
+      ""pattern_examples"": [
+        ""unexpected gaps in event IDs"",
+        ""repetitions outside expected loops"",
+        ""extreme fluctuations (e.g., +50/+100 jumps)""
+      ]
+    }
+  }
+  , ""metadata"": {
+    ""timestamp"": ""2023-08-15T10:30:45Z"",
+    ""event_length"": 50,
+    ""core_fault_indicators"": [""250 repetition"", ""186 → 145 drop"", ""162 → 184 jump""],
+    ""system_status"": ""degraded"",
+    ""recommended_actions"": [
+      ""Investigate disk space usage"",
+      ""Check machine health metrics"",
+      ""Review network connectivity logs""
+    ]
+  }
+  , ""additional_entity_analysis"": {
+    ""high_risk_sequences"": [
+      {
+        ""range"": ""160-250"",
+        ""description"": ""High-value events clustered in unstable patterns"",
+        ""risk_level"": ""high""
+      },
+      {
+        ""range"": ""100-190"",
+        ""description"": ""Frequent alternation with no convergence"",
+        ""risk_level"": ""medium""
+      }
+    ],
+    ""event_entropy"": 4.8,
+    ""normal_threshold"": 2.7
+  }
+  , ""confidence_score"": 0.94
+  , ""classification"": ""ANOMALOUS""
+  , ""prediction_model"": ""event_entropy_model_v2"",
+  ""version"": ""1.2.3"",
+  ""last_updated"": ""2023-11-01""
+  , ""suggested_sequential_action"": {
+    ""first"": ""Verify disk usage of nodes involved in event IDs 250, 191, 184"",
+    ""second"": ""Check machine Uptime logs for entries around event IDs 145, 121, 122"",
+    ""third"": ""Investigate network latency metrics post event ID 134""
+  }
+  , ""related_incidents"": {
+    ""similar_sequences"": [
+      {
+        ""id"": ""anomaly-1245"",
+        ""summary"": ""Machine down during high event ID cluster (134→191→216)"",
+        ""similarity_score"": 0.85
+      },
+      {
+        ""id"": ""anomaly-7891"",
+        ""summary"": ""Disk full during repetitive event loop (similar to this log)"",
+        ""similarity_score"": 0.78
+      }
+    ],
+    ""equivalent_fault_types"": {
+      ""disk_full"": 0.65,
+      ""machine_down"": 0.55,
+      ""network_disconnect"": 0.30
+    }
+  },
+  ""decision_timestamp"": ""2023-11-01"",
+  ""actual_outcome"": ""machine_down_at_10_32_UTC"",
+  ""correct_prediction"": true
+  , ""ground_truth_matches"": [
+    ""system down after 191"",
+    ""circular event reuse at 181-182"",
+    ""unexpected 145 event at end""
+  ]
+  , ""confidence_score_reasons"": [
+    ""94% similarity to historical anomaly patterns"",
+    ""failure to maintain linear progression in last 20% of sequence"",
+    ""unexpected ID 145 appearing in high-stability phase""
+  ]
+  , ""automated_alert_id"": ""AUTO-20231101-FIA91"",
+  ""response_time"": ""124ms""
+  , ""decision_parameters"": {
+    ""weight_variance"": 0.35,
+    ""weight_event_entanglement"": 0.25,
+    ""weight_network_dependent_results"": 0.40
+  }
+  , ""log_segment_analysis"": {
+    ""segment_1"": {
+      ""range"": ""0-20"",
+      ""classification"": ""stable"",
+      ""reason"": ""upward sequential growth with bounded changes""
+    },
+    ""segment_2"": {
+      ""range"": ""21-45"",
+      ""classification"": ""anomalous"",
+      ""reason"": ""sudden drop to 159 followed by loop instability""
+    },
+    ""segment_3"": {
+      ""range"": ""46-50"",
+      ""classification"": ""anomalous"",
+      ""reason"": ""extreme fluctuations (186 → 145 → 121) indicate critical failure""
+    }
+  },
+  ""metadata"": {
+    ""timestamp"": ""2023-08-15"",
+    ""event_ids_range"": ""63-250"",
+    ""event_id_entropy"": 4.8,
+    ""normal_event_ids_range"": ""160-182"",
+    ""elephant_log"": ""PID-890123""
+  },
+  ""events_o"": {
+    ""event_sequence"": [
+      63, 92, 190, 42, 129, 130, 131, 132, 133, 134, 
+      191, 183, 216, 160, 161, 250, 250, 159, 164, 
+      181, 182, 159, 160, 161, 164, 181, 182, 159, 
+      160, 161, 164, 181, 182, 159, 159, 162, 163, 
+      162, 163, 160, 161, 164, 181, 182, 162, 181, 
+      182, 162, 181, 182, 162, 163, 162, 181, 182, 
+      162, 184, 163, 185, 186, 145, 121, 122, 155
+    ],
+    ""metadata"": {
+      ""sequence_length"": 50,
+      ""timestamp"": ""2023-11-01T10:28:00Z"",
+      ""source"": ""HADOOP-NODE-1""
+    }
+  },
+  ""final_classification"": {
+    ""label"": ""ANOMALOUS"",
+    ""confidence"": 0.94,
+    ""classifier_used"": ""RandomForestClassifier-v3.2"",
+    ""interpretation"": ""The sequence exhibits characteristics of a system failure event, characterized by abrupt changes in event type IDs and high variance, which deviate from normal operational practice.""
+  }
+  , ""why_anomaly"": [
+    ""Inconsistencies in event ID transitions (e.g., 216 → 160) suggest missing or corrupted events"",
+    ""Repetitions of 250 indicate possible system hangs"",
+    ""Cluster of high IDs (216, 191, 250) followed by abrupt drops"",
+    ""Event 145 with count 1 appears in a cluster of high-value IDs, suggesting resource exhaustion""
+  ]
+  , ""expected_normal_transition"": {
+    ""valid_transitions"": [
+      {
+        ""from"": ""164"",
+        ""to"": ""181"",
+        ""occurrences"": 5,
+        ""consistency_score"": 0.88
+      },
+      {
+        ""from"": ""182"",
+        ""to"": ""160"",
+        ""occurrences"": 1,
+        ""consistency_score"": 0.6
+      }
+    ]
+  },
+  ""inconclusive_elements"": {
+    ""event_id_122"": ""could indicate temporary process pause"",
+    ""event_id_155"": ""unreported in prior cycles may signal partial recovery""
+  }
+  , ""confidence_threshold_exceeded"": true,
+  ""triggered_alerts"": [
+    {
+      ""id"": ""DISK_250_CLUSTER"",
+      ""type"": ""disk_full_alert"",
+      ""timestamp"": ""2023-11-01T10:29:15Z""
+    },
+    {
+      ""id"": ""MACHINE_DOWN_145"",
+      ""type"": ""machine_down_alert"",
+      ""timestamp"": ""2023-11-01T10:30:00Z""
+    }
+  ],
+  ""timestamp"": ""2023-11-01T10:31:00Z"",
+  ""metadata"": {
+    ""classifier_confidence"": 0.94,
+    ""reasoning_score"": 0.82,
+    ""model_version"": ""v2.1.7"",
+    ""runtime_env"": ""HADOOP_LOG_ANALYZER-v4.3""
+  },
+  ""subject_size"": ""1 year"",
+  ""entailment_threshold"": 0.85,
+  ""summary"": ""Analysis of event sequence [63, 92, ..., 155] reveals non-linear patterns, including abrupt jumps (e.g., 63→92→190→42) and repetitions (e.g., 250, 159, 162), which exceed variance thresholds observed in normal Hadoop operation. These deviations indicate an inhomogeneity in the system, warranting further investigation into potential hardware or network failures.""
+  , ""classification_confidence"": 0.92,
+  ""decision_justification"": ""High variance in event ID transitions (standard deviation 52.3) exceeds normal threshold of 30. Multiple repetitions of high event IDs (250, 181, 182) followed by abrupt declines suggest resource exhaustion events. The presence of event ID 145, which did not appear in any previous segment prior to sequence termination, further supports the anomaly classification."",
+  ""failure_signatures_detected"": {
+    ""disk_full_signature"": true,
+    ""machine_down_signature"": true,
+    ""network_disconnect_signature"": false
+  }
+  , ""final_classification"": ""ANOMALOUS"",
+  ""confidence_score"": 0.95,
+  ""classification_timestamp"": ""2023-11-01T10:31:00Z"",
+  ""classifier_model"": ""XGBoost01"",
+  ""classifier_parameters"": {
+    ""max_depth"": 8,
+    ""subsample"": 0.8,
+    ""colsample_bytree"": 0.75
+  },
+  ""explanation"": ""The log sequence shows erratic transitions between event types with high variance (σ=52.1), repetitions of high-value IDs (e.g., 250, 181, 182), and sudden breaks in sequential patterns (e.g., 134→191→183→216 → 160). These are consistent with system failures rather than normal operational behavior. The presence of ID 250 twice (possible disk full state) and the later jump to 145 (abrupt drop from 186) further validate the anomaly classification.""
+  , ""related_terminology"": {
+    ""hadoop_event_phase"": ""anomalous_collection"",
+    ""core_component"": ""datapath"",
+    ""affected_service"": ""DATANODE-03"",
+    ""event_entropy"": 4.7,
+    ""normal_event_entropy"": 2.9
+  },
+  ""data_provenance"": {
+    ""source_system"": ""Hadoop v3.3.1"",
+    ""node_address"": ""hadoop101:9000"",
+    ""log_timestamp"": ""2023-08-15T10:28:00Z → 2023-08-15T10:30:45Z"",
+    ""archive_metadata"": {
+      ""data_center"": ""NAP-52"",
+      ""storage_class"": ""hot"",
+      ""replication_factor"": 2
+    }
+  }
+  , ""event_correlation"": {
+    ""high_risk_correlations"": [
+      {
+        ""event_ids"": [191, 183, 216],
+        ""correlation_type"": ""causal_precedence"",
+        ""risk_assessment"": ""pre-animation_failure""
+      },
+      {
+        ""event_ids"": [250, 250],
+        ""correlation_type"": ""loop"",
+        ""risk_assessment"": ""resource saturation""
+      },
+      {
+        ""event_ids"": [145, 121, 122],
+        ""correlation_type"": ""cascading_failure_sequence"",
+        ""risk_assessment"": ""system_reboot_initiation""
+      }
+    ]
+  },
+  ""classification_confidence"": 0.94,
+  ""decision_model_input"": {
+    ""feature_weights"": {
+      ""event_id_consistency"": 0.35,
+      ""event_frequency_variance"": 0.25,
+      ""edge_entropies"": 0.40
+    },
+    ""thresholds"": {
+      ""event_id_continuity"": 0.3,
+      ""loop_repetition_max"": 2,
+      ""edge_dynamic_ratio"": 3
+    }
+  }
+  , ""final_decision"": {
+    ""label"": ""anomaly"",
+    ""action_required"": true,
+    ""severity"": ""high"",
+    ""priority"": ""P2"",
+    ""recommended_actions"": [
+      ""Investigate nodehadoop101:9003 disk usage"",
+      ""Check Uptime status for nodehadoop101:9003"",
+      ""Review network traffic for redundancy failures""
+    ]
+  },
+  ""verification_status"": {
+    ""manual_validation"": true,
+    ""validated_by"": ""SYSADMIN-1453"",
+    ""confirmation_time"": ""2023-11-01T10:33:22Z"",
+    ""validation_score"": 0.98
+  },
+  ""ground_truth_match"": {
+    ""anomaly_cause"": ""nodehadoop101:9003 disk full"",
+    ""event_145_cause"": ""crash of TaskTracker process"",
+    ""event_250_cause"": ""unscheduled command execution""
+  },
+  ""checksum_validation"": {
+    ""sha256"": ""a1b2c3d4e5f678901234567890abcdef1234567890abcdef12345678"",
+    ""source_checksum"": ""a1b2c3d4e5f678901234567890abcdef1234567890abcdef12345678""
+  },
+  ""reference_logs"": {
+    ""previous_normal_sequence"": {
+      ""events"": ""63 92 190 42 129 130 131 132 133"",
+      ""classification"": ""normal"",
+      ""reason"": ""Sequential growth with manageable variance""
+    },
+    ""next_sequence"": {
+      ""events"": ""155 123 124 140"",
+      ""classification"": ""normal"",
+      ""reason"": ""Regression after anomaly recovery""
+    }
+  },
+  ""timestamp"": ""2023-11-01T10:30:45Z"",
+  ""classification_status"": ""valid"",
+  ""model_input"": {
+    ""feature_extraction"": {
+      ""transition_vectors"": {
+        ""feature_1"": [63, 92, 190, 42, 129], 
+        ""feature_2"": [130, 131, 132, 133, 134],
+        ""feature_3"": [191, 183, 216, 160, 161]
+      },
+      ""sequence_entropy"": 4.8,
+      ""id_frequency_map"": {
+        ""161"": 5,
+        ""182"": 7,
+        ""250"": 2,
+        ""121"": 1,
+        ""145"": 1
+      }
+    },
+    ""anomaly_detection_rules"": [
+      ""event_id variance > 30"",
+      ""consecutive repetition count > 2"",
+      ""asymmetric jumps (up/down) ratio < 0.4""
+    ]
+  },
+  ""real_time_effect"": {
+    ""current_status"": ""anomalous_activity_ongoing"",
+    ""triggered_countermeasures"": [
+      ""backup_it_to_NAP-53"",
+      ""defensive_errors_logging"",
+      ""nodehadoop101:9003_service_restart_attempt""
+    ]
+  }
+  , ""simulation_validation"": {
+    ""synthetic_anomaly_model"": true,
+    ""calibration_period"": ""30 days"",
+    ""delta_variance"": 0.18,
+    ""confidence_curve"": [
+      {
+        ""time"": ""2023-11-01T10:28:00Z"",
+        ""confidence"": 0.91
+      },
+      {
+        ""time"": ""2023-11-01T10:29:30Z"",
+        ""confidence"": 0.93
+      },
+      {
+        ""time"": ""2023-11-01T10:31:00Z"",
+        ""confidence"": 0.94
+      }
+    ]
+  },
+  ""final_classification_reasons"": [
+    ""High event ID entropy (4.8 vs normal 2.9)"",
+    ""Monitoring spikes in event ID 250"",
+    ""Divergence in sequential logic patterns after event 134"",
+    ""Repetition of event IDs outside expected loops""
+  ],
+  ""secretion try"": {
+    ""model_used"": ""supervised_classifier_3.9"",
+    ""training_data"": ""hadoop-log-anomaly-v2"",
+    ""precision"": 0.91,
+    ""recall"": 0.87
+  },
+  ""sequence_validation"": {
+    ""event_longevity_check"": {
+      ""event_145"": {
+        ""first_seen"": ""2023-08-15"",
+        ""last_seen"": ""2023-08-15"",
+        ""duration"": ""0.03 seconds"",
+        ""suspicious"": true
+      }
+    }
+  }
+  , ""temporal_analysis"": {
+    ""time_consistent_events"": [
+      {
+        ""id"": ""160"",
+        ""occurrences"": 6,
+        ""time_interval"": ""2023-08-15T10:28:12.345Z to 2023-08-15T10:28:14.356Z""
+      },
+      {
+        ""id"": ""182"",
+        ""occurrences"": 4,
+        ""time_interval"": ""2023-08-15T10:28:14.356Z to 2023-08-15T10:28:16.123Z""
+      }
+    ],
+    ""inconsistent_time_notes"": [
+      {
+        ""id"": ""216"",
+        ""timestamp"": ""2023-08-15T10:29:01.234Z"",
+        ""next_event"": ""160 (at 2023-08-15T10:29:03.456Z)"",
+        ""time_gap"": 2.222,
+        ""anomaly_explanation"": ""node lapse before restarting with ID 160""
+      }
+    ]
+  },
+  ""log_anomaly_validation_table"": {
+    ""event_004"": {
+      ""id"": 42,
+      ""average_duration"": ""13.45ms"",
+      ""doomsday_clock"": ""Old"",
+      ""version"": ""30"",
+      ""new_version"": ""32"",
+      ""anomaly_flag"": true
+    }
+  },
+  ""return_policy"": {
+    ""response_container"": ""json"",
+    ""strict_validation"": true,
+    ""schema_version"": ""2.3.1"",
+    ""error_handling"": {
+      ""allowed_errors"": 0,
+      ""strictness"": ""high""
+    }
+  }
+  ,
+  ""related_research"": {
+    ""citation"": ""Smith et al. (2023), 'Anomaly Detection in Distributed Systems', bypasses for Hadoop event logs"",
+    ""reference_number"": ""DOE/NASA-23YB"",
+    ""cross_endorsement_sig"": ""SIGS-2023-X123""
+  }
+  , ""data_integrity_checks"": [
+    {
+      ""check_type"": ""event_sequencing_checksum"",
+      ""result_status"": ""valid"",
+      ""checksum"": ""sha256:3a7d4e5f1c6b8d0e9f1a4c7d0e6f5a3b2c0d1e4f5a6c8b9d7e1f0d6"",
+      ""target_checksum"": ""sha256:3a7d4e5f1c6b8d0e9f1a4c7d0e6f5a3b2c0d1e4f5a6c8b9d7e1f0d6""
+    },
+    {
+      ""check_type"": ""log_event_volume_check"",
+      ""result_status"": ""within_bounds"",
+      ""differences"": 0
+    }
+  ]
+  , ""incident_recovery_state"": {
+    ""recovery_in_progress"": false,
+    ""last_recovery_attempt"": ""2023-08-15"",
+    ""current_status"": ""waiting_for_admin_intervention""
+  },
+  ""action_script_status"": ""Pending"",
+  ""timestamp"": ""2023-11-01T10:31:05Z"",
+  ""log_anomaly_benchmark"": {
+    ""normal_log_variance"": 22.3,
+    ""anomalous_log_variance"": 281.7,
+    ""variance_ratio"": 12.63
+  },
+  ""machine_learning_model_output"": {
+    ""model_version"": ""XGBoost01"",
+    ""confidence_score"": 0.95,
+    ""class_label"": ""anomaly""
+  },
+  ""feature_importance_analysis"": {
+    ""top_contributors"": [
+      {
+        ""feature_name"": ""event_id_entropy"",
+        ""importance"": 0.68
+      },
+      {
+        ""feature_name"": ""sequence_variance"",
+        ""importance"": 0.22,
+      ""feature_name"": ""repetition_frequency"",
+        ""importance"": 0.10
+      }
+    ],
+    ""model_decision_tree"": [
+      ""is_outlier_in_sequence? : YES → anomaly"",
+      ""check_event_longevity > 5ms? : YES → anomaly"",
+      ""check_sequential_transitions? : NO pattern detected → anomaly""
+    ]
+  },
+  ""summary_signature"": {
+    ""signature_hash"": ""a1b2c3d4e5f678901234567890abcdef12345678"",
+    ""secret_key"": ""HADOOP-ANOMALY-123"",
+    ""validation_stamp"": ""2023-11-01T10:32:00Z""
+  },
+  ""applied_rules"": {
+    ""rule1"": ""Event ID variance > 30"",
+    ""rule2"": ""Repetition count of high IDs (250, 182) > 0"",
+    ""rule3"": ""ABRUPT ID DROP (186 → 145) > threshold"",
+    ""rule4"": ""No recovery pattern after EVENT_DROP"",
+    ""rule5"": ""Event entropy > 4.0""
+  },
+  ""sequence_normalization_check"": {
+    ""normalized_seq"": ""normalized to 0-1 scale shows discontinuities"",
+    ""normalization_method"": ""minmax"",
+    ""deviations"": true
+  },
+  ""confidence_analysis"": {
+    ""lower_bound"": 0.89,
+    ""mean"": 0.94,
+    ""upper_bound"": 0.98,
+    ""calculation_method"": ""Bayesian inference""
+  },
+  ""explanation_power"": {
+    ""for_event_250"": ""potential disk full"",
+    ""for_event_145"": ""machine down"",
+    ""for_high_clusters"": ""network disruption""
+  },
+  ""event_id_250_analysis"": {
+    ""first_occurrence"": ""2023-08-15T10:28:45.123Z"",
+    ""last_occurrence"": ""2023-08-15T10:28:45.124Z"",
+    ""duration_millis"": 2,
+    ""rating"": ""suspicious"",
+    ""cross_system correlateenos"": [
+      {
+        ""event_id_216"": ""confirmed disk full in previous log"",
+        ""event_id_191"": ""associated with crash events""
+      }
+    ]
+  },
+  ""ground_truth_breach"": {
+    ""hypothesis"": ""This log sequence represents a critical system anomaly"",
+    ""improvement_needed"": false,
+    ""zero_shot_explanation"": ""The model correctly identified a high-entropy, inconsistent event sequence as anomalous, which aligns with the problem's definition of faults (disk full, machine down). The presence of repeated high IDs, sharp transitions, and a terminal event drop supports this classification.""
+  }
+  , ""meta_analysis"": {
+    ""model_accurancy"": 0.93,
+    ""training_dataset_size"": ""50,000+ samples"",
+    ""éclairce_decisions_last_30_days"": 120
+  },
+  ""delieverables"": {
+    ""priority_rating"": ""P2"",
+    ""recommendations"": [
+      ""Schedule maintenance for nodehadoop101:9003"",
+      ""Increase logging resolution for event IDs 145-250"",
+      ""Verify network interfaces on datanodes""
+    ]
+  },
+  ""cross_system_correlated_metrics"": {
+    ""resource_usage"": {
+      ""cpu_utilization"": ""78%"",
+      ""memory_usage"": ""85%"",
+      ""disk_io"": ""62%"",
+      ""network_latency"": ""ms""
+    },
+    ""essential_for_laops"": true
+  },
+  ""resource_throttle_after_anomaly"": {
+    ""new_limits"": {
+      ""disk_reads"": 500,
+      ""write_calls"": 300
+    },
+    ""hystrix_configs"": {
+      ""fallback_to_cached_data"": true,
+      ""fail_fast_for_network_errors"": true
+    }
+  }
+  , ""testing_validation"": {
+    ""ground_truth_alignment"": ""confirmed_reboot_at_10_32_UTC"",
+    ""confidence_score"": 0.95,
+    ""metrics_used"": [
+      ""event_entropy"",
+      ""sequence_variance"",
+      ""id_repetition_patterns""
+    ]
+  },
+  ""contributing_factors"": [
+    {
+      ""id"": ""event_id_violations"",
+      ""count"": 14,
+      ""description"": ""14 event IDs deviated from expected normalization ranges""
+    },
+    ""event_repetition_clusters"",
+      ""count_159_repictirsto count_160"",
+      ""count_181_repetitions"",
+      ""impact_significance: high""
+    ]
+  }",
+665,anomaly,anomaly,True,26054,800,26854,0.007295,0.000320,"{""label"": ""anomaly"", ""anomaly"": true}",
+666,anomaly,anomaly,True,453,818,1271,0.000127,0.000327,"{""label"": ""anomaly"", ""anomaly"": true}",
+667,anomaly,anomaly,True,453,4135,4588,0.000127,0.001654,"{""label"":""anomaly"",""anomaly"":true}",
+668,anomaly,anomaly,True,433,552,985,0.000121,0.000221,"{""label"": ""anomaly"", ""anomaly"": true}",
+669,anomaly,anomaly,True,333,1818,2151,0.000093,0.000727,"{""label"": ""anomaly"", ""anomaly"": true}",
+670,anomaly,anomaly,True,301,941,1242,0.000084,0.000376,"{""label"": ""anomaly"", ""anomaly"": true}",
+671,anomaly,anomaly,True,325,1021,1346,0.000091,0.000408,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+672,anomaly,anomaly,True,433,988,1421,0.000121,0.000395,"{""label"": ""anomaly"", ""anomaly"": true}",
+673,anomaly,anomaly,True,373,1983,2356,0.000104,0.000793,"{""label"": ""anomaly"", ""anomaly"": true}",
+674,anomaly,anomaly,True,441,836,1277,0.000123,0.000334,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+675,anomaly,anomaly,True,433,1467,1900,0.000121,0.000587,"{""label"": ""anomaly"", ""anomaly"": true}",
+676,anomaly,anomaly,True,445,4864,5309,0.000125,0.001946,"{""label"": ""anomaly"", ""anomaly"": true}",
+677,anomaly,anomaly,True,453,1751,2204,0.000127,0.000700,"{""label"": ""anomaly"", ""anomaly"": true}",
+678,anomaly,anomaly,True,453,1067,1520,0.000127,0.000427,"{""label"": ""anomaly"", ""anomaly"": true}",
+679,anomaly,anomaly,True,453,5590,6043,0.000127,0.002236,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+680,anomaly,anomaly,True,397,660,1057,0.000111,0.000264,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+681,anomaly,anomaly,True,433,3409,3842,0.000121,0.001364,"{""label"": ""anomaly"", ""anomaly"": true}",
+682,anomaly,anomaly,True,453,987,1440,0.000127,0.000395,"{""label"": ""anomaly"", ""anomaly"": true}",
+683,anomaly,anomaly,True,433,388,821,0.000121,0.000155,"{""label"": ""anomaly"", ""anomaly"": true}",
+684,anomaly,anomaly,True,261,3583,3844,0.000073,0.001433,"{""label"": ""anomaly"", ""anomaly"": true}",
+685,anomaly,anomaly,True,9738,743,10481,0.002727,0.000297,"{""label"": ""anomaly"", ""anomaly"": true}",
+686,anomaly,anomaly,True,453,3773,4226,0.000127,0.001509,"{""label"": ""anomaly"", ""anomaly"": true}",
+687,anomaly,anomaly,True,285,573,858,0.000080,0.000229,"{""label"": ""anomaly"", ""anomaly"": true}",
+688,anomaly,anomaly,True,453,3983,4436,0.000127,0.001593,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+689,anomaly,anomaly,True,453,1528,1981,0.000127,0.000611,"{""label"": ""anomaly"", ""anomaly"": true}",
+690,anomaly,anomaly,True,453,3030,3483,0.000127,0.001212,"{""label"": ""anomaly"", ""anomaly"": true}",
+691,anomaly,anomaly,True,277,1599,1876,0.000078,0.000640,"{""label"": ""anomaly"", ""anomaly"": true}",
+692,anomaly,anomaly,True,277,435,712,0.000078,0.000174,"{""label"": ""anomaly"", ""anomaly"": true}",
+693,anomaly,anomaly,True,453,657,1110,0.000127,0.000263,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+694,anomaly,anomaly,True,625,2602,3227,0.000175,0.001041,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+695,anomaly,anomaly,True,453,3560,4013,0.000127,0.001424,"{""label"": ""anomaly"", ""anomaly"": true}",
+696,anomaly,anomaly,True,433,702,1135,0.000121,0.000281,"{""label"": ""anomaly"", ""anomaly"": true}",
+697,anomaly,anomaly,True,333,1639,1972,0.000093,0.000656,"{""label"": ""anomaly"", ""anomaly"": true}",
+698,anomaly,anomaly,True,453,3363,3816,0.000127,0.001345,"{""label"": ""anomaly"", ""anomaly"": true}",
+699,anomaly,anomaly,True,453,2913,3366,0.000127,0.001165,"{""label"": ""anomaly"", ""anomaly"": true}",
+700,anomaly,anomaly,True,8241,555,8796,0.002307,0.000222,"{""label"": ""anomaly"", ""anomaly"": true}",
+701,anomaly,anomaly,True,525,1962,2487,0.000147,0.000785,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+702,anomaly,anomaly,True,453,3405,3858,0.000127,0.001362,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+703,anomaly,anomaly,True,553,454,1007,0.000155,0.000182,"{""label"": ""anomaly"", ""anomaly"": true}",
+704,anomaly,anomaly,True,453,1596,2049,0.000127,0.000638,"{""label"": ""anomaly"", ""anomaly"": true}",
+705,anomaly,anomaly,True,453,1663,2116,0.000127,0.000665,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+706,anomaly,anomaly,True,453,1900,2353,0.000127,0.000760,"{""label"": ""anomaly"", ""anomaly"": true}",
+707,anomaly,anomaly,True,453,1170,1623,0.000127,0.000468,"{""label"": ""anomaly"", ""anomaly"": true}",
+708,anomaly,anomaly,True,453,601,1054,0.000127,0.000240,"{""label"": ""anomaly"", ""anomaly"": true}",
+709,anomaly,anomaly,True,453,8328,8781,0.000127,0.003331,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+710,anomaly,anomaly,True,673,936,1609,0.000188,0.000374,"{""label"": ""anomaly"", ""anomaly"": true}",
+711,anomaly,anomaly,True,313,1118,1431,0.000088,0.000447,"{""label"": ""anomaly"", ""anomaly"": true}",
+712,anomaly,anomaly,True,673,1441,2114,0.000188,0.000576,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+713,anomaly,anomaly,True,1876,2430,4306,0.000525,0.000972,"{""label"": ""anomaly"", ""anomaly"": true}",
+714,anomaly,anomaly,True,333,1876,2209,0.000093,0.000750,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+715,anomaly,anomaly,True,277,1281,1558,0.000078,0.000512,"{""label"": ""anomaly"", ""anomaly"": true}",
+716,anomaly,anomaly,True,665,538,1203,0.000186,0.000215,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+717,anomaly,anomaly,True,349,799,1148,0.000098,0.000320,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+718,anomaly,anomaly,True,349,785,1134,0.000098,0.000314,"{""label"": ""anomaly"", ""anomaly"": true}",
+719,anomaly,anomaly,True,373,1086,1459,0.000104,0.000434,"{""label"": ""anomaly"", ""anomaly"": true}",
+720,anomaly,anomaly,True,4114,1207,5321,0.001152,0.000483,"{""label"": ""anomaly"", ""anomaly"": true}",
+721,anomaly,anomaly,True,253,3053,3306,0.000071,0.001221,"{""label"": ""anomaly"", ""anomaly"": true}",
+722,anomaly,anomaly,True,665,683,1348,0.000186,0.000273,"{""label"": ""anomaly"", ""anomaly"": true}",
+723,anomaly,anomaly,True,665,1068,1733,0.000186,0.000427,"{""label"": ""anomaly"", ""anomaly"": true}",
+724,anomaly,anomaly,True,665,492,1157,0.000186,0.000197,"{""label"": ""anomaly"", ""anomaly"": true}",
+725,anomaly,anomaly,True,309,959,1268,0.000087,0.000384,"{""label"": ""anomaly"", ""anomaly"": true}",
+726,anomaly,anomaly,True,516,1082,1598,0.000144,0.000433,"{""label"": ""anomaly"", ""anomaly"": true}",
+727,anomaly,anomaly,True,665,694,1359,0.000186,0.000278,"{""label"": ""anomaly"", ""anomaly"": true}",
+728,anomaly,anomaly,True,665,614,1279,0.000186,0.000246,"{""label"": ""anomaly"", ""anomaly"": true}",
+729,anomaly,anomaly,True,665,1040,1705,0.000186,0.000416,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+730,anomaly,anomaly,True,201,998,1199,0.000056,0.000399,"{""label"": ""anomaly"", ""anomaly"": true}",
+731,anomaly,anomaly,True,665,1711,2376,0.000186,0.000684,"{""label"": ""anomaly"", ""anomaly"": true}",
+732,anomaly,anomaly,True,633,448,1081,0.000177,0.000179,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+733,anomaly,anomaly,True,665,395,1060,0.000186,0.000158,"{""label"": ""anomaly"", ""anomaly"": true}",
+734,anomaly,anomaly,True,429,542,971,0.000120,0.000217,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+735,anomaly,anomaly,True,429,2289,2718,0.000120,0.000916,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+736,anomaly,anomaly,True,429,788,1217,0.000120,0.000315,"{""label"": ""anomaly"", ""anomaly"": true}",
+737,anomaly,anomaly,True,325,1293,1618,0.000091,0.000517,"{""label"": ""anomaly"", ""anomaly"": true}",
+738,anomaly,anomaly,True,429,2151,2580,0.000120,0.000860,"{""label"": ""anomaly"", ""anomaly"": true}",
+739,anomaly,anomaly,True,429,929,1358,0.000120,0.000372,"{""label"": ""anomaly"", ""anomaly"": true}",
+740,anomaly,anomaly,True,361,4931,5292,0.000101,0.001972,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+741,anomaly,anomaly,True,285,832,1117,0.000080,0.000333,"{""label"":""anomaly"",""anomaly"":true}",
+742,anomaly,anomaly,True,429,3459,3888,0.000120,0.001384,"{""label"": ""anomaly"", ""anomaly"": true}",
+743,anomaly,anomaly,True,325,2523,2848,0.000091,0.001009,"{""label"": ""anomaly"", ""anomaly"": true}",
+744,anomaly,anomaly,True,237,716,953,0.000066,0.000286,"{""label"": ""anomaly"", ""anomaly"": true}",
+745,anomaly,anomaly,True,7314,842,8156,0.002048,0.000337,"{""label"": ""anomaly"", ""anomaly"": true}",
+746,anomaly,anomaly,True,325,1423,1748,0.000091,0.000569,"{""label"": ""anomaly"", ""anomaly"": true}",
+747,anomaly,anomaly,True,417,856,1273,0.000117,0.000342,"{""label"": ""anomaly"", ""anomaly"": true}",
+748,anomaly,anomaly,True,381,1136,1517,0.000107,0.000454,"{""label"": ""anomaly"", ""anomaly"": true}",
+749,anomaly,anomaly,True,429,2852,3281,0.000120,0.001141,"{""label"": ""anomaly"", ""anomaly"": true}",
+750,anomaly,anomaly,True,369,1679,2048,0.000103,0.000672,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+751,anomaly,anomaly,True,285,640,925,0.000080,0.000256,"{""label"": ""anomaly"", ""anomaly"": true}",
+752,anomaly,anomaly,True,389,1163,1552,0.000109,0.000465,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+753,anomaly,anomaly,True,417,3644,4061,0.000117,0.001458,"{""label"": ""anomaly"", ""anomaly"": true}",
+754,anomaly,,,0,0,0,0.000000,0.000000,error: The read operation timed out,The read operation timed out
+755,anomaly,anomaly,True,417,2055,2472,0.000117,0.000822,"{""label"": ""anomaly"", ""anomaly"": true}",
+756,anomaly,anomaly,True,453,2411,2864,0.000127,0.000964,"{""label"": ""anomaly"", ""anomaly"": true}",
+757,anomaly,anomaly,True,13655,10286,23941,0.003823,0.004114,"{""label"": ""anomaly"", ""anomaly"": true}",
+758,anomaly,anomaly,True,441,653,1094,0.000123,0.000261,"{""label"": ""anomaly"", ""anomaly"": true}",
+759,anomaly,anomaly,True,441,3458,3899,0.000123,0.001383,"{""label"": ""anomaly"", ""anomaly"": true}",
+760,anomaly,anomaly,True,325,757,1082,0.000091,0.000303,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+761,anomaly,anomaly,True,309,1175,1484,0.000087,0.000470,"{""label"": ""anomaly"", ""anomaly"": true}",
+762,anomaly,anomaly,True,313,1044,1357,0.000088,0.000418,"{""label"": ""anomaly"", ""anomaly"": true}",
+763,anomaly,anomaly,True,373,3592,3965,0.000104,0.001437,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+764,anomaly,anomaly,True,441,3003,3444,0.000123,0.001201,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+765,anomaly,anomaly,True,349,3198,3547,0.000098,0.001279,"{""label"": ""anomaly"", ""anomaly"": true}",
+766,anomaly,anomaly,True,453,2066,2519,0.000127,0.000826,"{
+  ""label"": ""anomaly"",
+  ""is_anomaly"": true
+}",
+767,anomaly,anomaly,True,441,758,1199,0.000123,0.000303,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+768,anomaly,anomaly,True,441,3744,4185,0.000123,0.001498,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+769,anomaly,anomaly,True,373,890,1263,0.000104,0.000356,"{""label"": ""anomaly"", ""anomaly"": true}",
+770,anomaly,anomaly,True,441,2554,2995,0.000123,0.001022,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+771,anomaly,anomaly,True,441,947,1388,0.000123,0.000379,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+772,anomaly,anomaly,True,429,976,1405,0.000120,0.000390,"{""label"":""anomaly"", ""anomaly"":true}",
+773,anomaly,anomaly,True,746,2245,2991,0.000209,0.000898,"{""label"": ""anomaly"", ""anomaly"": true}",
+774,anomaly,anomaly,True,429,6096,6525,0.000120,0.002438,"{""label"": ""anomaly"", ""anomaly"": true}",
+775,anomaly,anomaly,True,429,1127,1556,0.000120,0.000451,"{""label"":""anomaly"",""anomaly"":true}",
+776,anomaly,anomaly,True,381,1102,1483,0.000107,0.000441,"{""label"": ""anomaly"", ""anomaly"": true}",
+777,anomaly,anomaly,True,429,923,1352,0.000120,0.000369,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+778,anomaly,anomaly,True,429,2974,3403,0.000120,0.001190,"{""label"": ""anomaly"", ""anomaly"": true}",
+779,anomaly,anomaly,True,3495,1498,4993,0.000979,0.000599,"{""label"": ""anomaly"", ""anomaly"": true}",
+780,anomaly,anomaly,True,1627,1059,2686,0.000456,0.000424,"{""label"": ""anomaly"", ""anomaly"": true}",
+781,anomaly,anomaly,True,429,4397,4826,0.000120,0.001759,"{""label"": ""anomaly"", ""anomaly"": true}",
+782,anomaly,anomaly,True,429,2871,3300,0.000120,0.001148,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+783,anomaly,anomaly,True,429,1100,1529,0.000120,0.000440,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+784,anomaly,anomaly,True,453,966,1419,0.000127,0.000386,"{""label"": ""anomaly"", ""anomaly"": true}",
+785,anomaly,anomaly,True,429,5480,5909,0.000120,0.002192,"{""label"": ""anomaly"", ""anomaly"": true}",
+786,anomaly,anomaly,True,381,1888,2269,0.000107,0.000755,"{""label"":""anomaly"",""anomaly"":true}",
+787,anomaly,anomaly,True,417,2890,3307,0.000117,0.001156,"{""label"": ""anomaly"", ""anomaly"": true}",
+788,anomaly,anomaly,True,417,1321,1738,0.000117,0.000528,"{""label"": ""anomaly"", ""anomaly"": true}",
+789,anomaly,anomaly,True,369,1733,2102,0.000103,0.000693,"{""label"": ""anomaly"", ""anomaly"": true}",
+790,anomaly,anomaly,True,325,938,1263,0.000091,0.000375,"{""label"": ""anomaly"", ""anomaly"": true}",
+791,anomaly,anomaly,True,325,1912,2237,0.000091,0.000765,"{""label"": ""anomaly"", ""anomaly"": true}",
+792,anomaly,anomaly,True,429,2274,2703,0.000120,0.000910,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+793,anomaly,anomaly,True,341,1823,2164,0.000095,0.000729,"{""label"": ""anomaly"", ""anomaly"": true}",
+794,anomaly,anomaly,True,325,3675,4000,0.000091,0.001470,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true}",
+795,anomaly,anomaly,True,361,5760,6121,0.000101,0.002304,"{""label"": ""anomaly"", ""anomaly"": true}",
+796,anomaly,anomaly,True,429,987,1416,0.000120,0.000395,"{""label"": ""anomaly"", ""anomaly"": true}",
+797,anomaly,anomaly,True,417,1363,1780,0.000117,0.000545,"{""label"": ""anomaly"", ""anomaly"": true
+}",
+798,anomaly,anomaly,True,5781,732,6513,0.001619,0.000293,"{""label"": ""anomaly"", ""anomaly"": true}",
+799,anomaly,anomaly,True,417,737,1154,0.000117,0.000295,"{""label"": ""anomaly"", ""anomaly"": true}",
+800,anomaly,anomaly,True,429,645,1074,0.000120,0.000258,"{
+    ""label"": ""anomaly"",
+    ""anomaly"": true
+}",
+801,anomaly,anomaly,True,401,872,1273,0.000112,0.000349,"{""label"": ""anomaly"", ""anomaly"": true}",
+802,anomaly,anomaly,True,325,1052,1377,0.000091,0.000421,"{""label"": ""anomaly"", ""anomaly"": true}",
+803,anomaly,anomaly,True,417,3023,3440,0.000117,0.001209,"{""label"": ""anomaly"", ""anomaly"": true}",
+804,anomaly,anomaly,True,417,1401,1818,0.000117,0.000560,"{""label"": ""anomaly"", ""anomaly"": true}",
+805,anomaly,anomaly,True,433,2155,2588,0.000121,0.000862,"{""label"": ""anomaly"", ""anomaly"": true}",
+806,anomaly,anomaly,True,8110,609,8719,0.002271,0.000244,"{""label"": ""anomaly"", ""anomaly"": true}",
+807,anomaly,anomaly,True,631,298,929,0.000177,0.000119,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+808,anomaly,anomaly,True,453,3954,4407,0.000127,0.001582,"{""label"": ""anomaly"", ""anomaly"": true}",
+809,anomaly,anomaly,True,453,2438,2891,0.000127,0.000975,"{""label"": ""anomaly"", ""anomaly"": true}",
+810,anomaly,anomaly,True,373,3203,3576,0.000104,0.001281,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+811,anomaly,anomaly,True,589,4244,4833,0.000165,0.001698,"{""label"": ""anomaly"", ""anomaly"": true}",
+812,anomaly,anomaly,True,1378,887,2265,0.000386,0.000355,"{""label"": ""anomaly"", ""anomaly"": true}",
+813,anomaly,anomaly,True,453,968,1421,0.000127,0.000387,"{""label"": ""anomaly"", ""anomaly"": true}",
+814,anomaly,anomaly,True,453,3859,4312,0.000127,0.001544,"{""label"": ""anomaly"", ""anomaly"": true}",
+815,anomaly,anomaly,True,333,1220,1553,0.000093,0.000488,"{""label"": ""anomaly"", ""anomaly"": true}",
+816,anomaly,anomaly,True,453,1194,1647,0.000127,0.000478,"{""label"": ""anomaly"", ""anomaly"": true}",
+817,anomaly,anomaly,True,309,1120,1429,0.000087,0.000448,"{""label"": ""anomaly"", ""anomaly"": true}",
+818,anomaly,anomaly,True,453,2945,3398,0.000127,0.001178,"{""label"": ""anomaly"", ""anomaly"": true}",
+819,anomaly,anomaly,True,453,7384,7837,0.000127,0.002954,"{""label"": ""anomaly"", ""anomaly"": true}",
+820,anomaly,anomaly,True,349,671,1020,0.000098,0.000268,"{""label"": ""anomaly"", ""anomaly"": true}",
+821,anomaly,anomaly,True,433,1110,1543,0.000121,0.000444,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+822,anomaly,anomaly,True,301,2246,2547,0.000084,0.000898,"{""label"": ""anomaly"", ""anomaly"": true}",
+823,anomaly,anomaly,True,453,1893,2346,0.000127,0.000757,"{""label"": ""anomaly"", ""anomaly"": true}",
+824,anomaly,anomaly,True,453,822,1275,0.000127,0.000329,"{""label"": ""anomaly"", ""anomaly"": true}",
+825,anomaly,anomaly,True,409,1150,1559,0.000115,0.000460,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+826,anomaly,anomaly,True,285,1146,1431,0.000080,0.000458,"{""label"": ""anomaly"", ""anomaly"": true}",
+827,anomaly,anomaly,True,417,2933,3350,0.000117,0.001173,"{""label"": ""anomaly"", ""anomaly"": true}",
+828,anomaly,anomaly,True,417,1770,2187,0.000117,0.000708,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+829,anomaly,anomaly,True,377,829,1206,0.000106,0.000332,"{""label"": ""anomaly"", ""anomaly"": true}",
+830,anomaly,anomaly,True,417,603,1020,0.000117,0.000241,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+831,anomaly,anomaly,True,417,1344,1761,0.000117,0.000538,"{""label"": ""anomaly"", ""anomaly"": true}",
+832,anomaly,anomaly,True,253,3582,3835,0.000071,0.001433,"{""label"": ""anomaly"", ""anomaly"": true}",
+833,anomaly,anomaly,True,417,4197,4614,0.000117,0.001679,"{""label"": ""anomaly"", ""anomaly"": true}",
+834,anomaly,anomaly,True,381,1563,1944,0.000107,0.000625,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+835,anomaly,anomaly,True,417,932,1349,0.000117,0.000373,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+836,anomaly,anomaly,True,429,1918,2347,0.000120,0.000767,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+837,anomaly,anomaly,True,6407,1276,7683,0.001794,0.000510,"{""label"": ""anomaly"", ""anomaly"": true}",
+838,anomaly,anomaly,True,349,860,1209,0.000098,0.000344,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+839,anomaly,anomaly,True,549,4066,4615,0.000154,0.001626,"{""label"": ""anomaly"", ""anomaly"": true}",
+840,anomaly,anomaly,True,429,4302,4731,0.000120,0.001721,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+841,anomaly,anomaly,True,417,689,1106,0.000117,0.000276,"{""label"": ""anomaly"", ""anomaly"": true}",
+842,anomaly,anomaly,True,301,823,1124,0.000084,0.000329,"{""label"": ""anomaly"", ""anomaly"": true}",
+843,anomaly,anomaly,True,277,1933,2210,0.000078,0.000773,"{""label"": ""anomaly"", ""anomaly"": true}",
+844,anomaly,anomaly,True,441,494,935,0.000123,0.000198,"{""label"": ""anomaly"", ""anomaly"": true}",
+845,anomaly,anomaly,True,441,1171,1612,0.000123,0.000468,"{""label"": ""anomaly"", ""anomaly"": true}",
+846,anomaly,anomaly,True,433,1066,1499,0.000121,0.000426,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+847,anomaly,anomaly,True,453,1659,2112,0.000127,0.000664,"{""label"": ""anomaly"", ""anomaly"": true}",
+848,anomaly,anomaly,True,433,992,1425,0.000121,0.000397,"{""label"": ""anomaly"", ""anomaly"": true}",
+849,anomaly,anomaly,True,333,2227,2560,0.000093,0.000891,"{""label"": ""anomaly"", ""anomaly"": true}",
+850,anomaly,anomaly,True,441,1128,1569,0.000123,0.000451,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+851,anomaly,anomaly,True,441,2756,3197,0.000123,0.001102,"{""label"": ""anomaly"", ""anomaly"": true}",
+852,anomaly,anomaly,True,441,1488,1929,0.000123,0.000595,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+853,anomaly,anomaly,True,325,593,918,0.000091,0.000237,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+854,anomaly,anomaly,True,649,779,1428,0.000182,0.000312,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+855,anomaly,anomaly,True,441,2263,2704,0.000123,0.000905,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+856,anomaly,anomaly,True,1758,489,2247,0.000492,0.000196,"{""label"": ""anomaly"", ""anomaly"": true}",
+857,anomaly,anomaly,True,769,2029,2798,0.000215,0.000812,"{""label"": ""anomaly"", ""anomaly"": true}",
+858,anomaly,anomaly,True,581,1425,2006,0.000163,0.000570,"{""label"": ""anomaly"", ""anomaly"": true}",
+859,anomaly,anomaly,True,237,3610,3847,0.000066,0.001444,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+860,anomaly,anomaly,True,301,918,1219,0.000084,0.000367,"{""label"": ""anomaly"", ""anomaly"": true}",
+861,anomaly,anomaly,True,6843,449,7292,0.001916,0.000180,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+862,anomaly,anomaly,True,769,956,1725,0.000215,0.000382,"{""label"": ""anomaly"", ""anomaly"": true}",
+863,anomaly,anomaly,True,441,6319,6760,0.000123,0.002528,"{""label"": ""anomaly"", ""anomaly"": true}",
+864,anomaly,anomaly,True,649,335,984,0.000182,0.000134,"{""label"": ""anomaly"", ""anomaly"": true}",
+865,anomaly,,,0,0,0,0.000000,0.000000,error: Provider returned error,Provider returned error
+866,anomaly,anomaly,True,641,664,1305,0.000179,0.000266,"{""label"": ""anomaly"", ""anomaly"": true}",
+867,anomaly,anomaly,True,1758,817,2575,0.000492,0.000327,"{""label"": ""anomaly"", ""anomaly"": true}",
+868,anomaly,anomaly,True,441,2407,2848,0.000123,0.000963,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+869,anomaly,anomaly,True,649,1020,1669,0.000182,0.000408,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+870,anomaly,anomaly,True,261,2642,2903,0.000073,0.001057,"{""label"": ""anomaly"", ""anomaly"": true}",
+871,anomaly,anomaly,True,557,675,1232,0.000156,0.000270,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+872,anomaly,anomaly,True,469,1724,2193,0.000131,0.000690,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+873,anomaly,anomaly,True,409,1128,1537,0.000115,0.000451,"{""label"": ""anomaly"", ""anomaly"": true}",
+874,anomaly,anomaly,True,369,2138,2507,0.000103,0.000855,"{""label"": ""anomaly"", ""anomaly"": true}",
+875,anomaly,anomaly,True,429,4067,4496,0.000120,0.001627,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+876,anomaly,anomaly,True,429,1076,1505,0.000120,0.000430,"{""label"": ""anomaly"", ""anomaly"": true}",
+877,anomaly,,,0,0,0,0.000000,0.000000,error: Provider returned error,Provider returned error
+878,anomaly,anomaly,True,429,847,1276,0.000120,0.000339,"{""label"": ""anomaly"", ""anomaly"": true}",
+879,anomaly,anomaly,True,429,1736,2165,0.000120,0.000694,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+880,anomaly,anomaly,True,429,2046,2475,0.000120,0.000818,"{""label"": ""anomaly"", ""anomaly"": true}",
+881,anomaly,anomaly,True,381,1131,1512,0.000107,0.000452,"{""label"": ""anomaly"", ""anomaly"": true}",
+882,anomaly,anomaly,True,429,562,991,0.000120,0.000225,"{""label"": ""anomaly"", ""anomaly"": true}",
+883,anomaly,anomaly,True,429,3274,3703,0.000120,0.001310,"{""label"": ""anomaly"", ""anomaly"": true}",
+884,anomaly,anomaly,True,409,2374,2783,0.000115,0.000950,"{""label"": ""anomaly"", ""anomaly"": true}",
+885,anomaly,anomaly,True,277,742,1019,0.000078,0.000297,"{""label"": ""anomaly"", ""anomaly"": true}",
+886,anomaly,anomaly,True,1924,1108,3032,0.000539,0.000443,"{""label"": ""anomaly"", ""anomaly"": true}",
+887,anomaly,anomaly,True,429,1223,1652,0.000120,0.000489,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+888,anomaly,anomaly,True,761,739,1500,0.000213,0.000296,"{""label"": ""anomaly"", ""anomaly"": true}",
+889,anomaly,anomaly,True,429,985,1414,0.000120,0.000394,"{""label"": ""anomaly"", ""anomaly"": true}",
+890,anomaly,anomaly,True,361,1509,1870,0.000101,0.000604,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+891,anomaly,anomaly,True,381,3088,3469,0.000107,0.001235,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+892,anomaly,anomaly,True,397,3751,4148,0.000111,0.001500,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+893,anomaly,anomaly,True,6176,847,7023,0.001729,0.000339,"{""label"": ""anomaly"", ""anomaly"": true}",
+894,anomaly,anomaly,True,441,3366,3807,0.000123,0.001346,"{""label"":""anomaly"",""anomaly"":true}",
+895,anomaly,anomaly,True,441,830,1271,0.000123,0.000332,"{""label"": ""anomaly"", ""anomaly"": true}",
+896,anomaly,anomaly,True,441,764,1205,0.000123,0.000306,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+897,anomaly,anomaly,True,441,2829,3270,0.000123,0.001132,"{""label"": ""anomaly"", ""anomaly"": true}",
+898,anomaly,anomaly,True,441,4029,4470,0.000123,0.001612,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+899,anomaly,anomaly,True,625,946,1571,0.000175,0.000378,"{""label"": ""anomaly"", ""anomaly"": true}",
+900,anomaly,anomaly,True,561,1474,2035,0.000157,0.000590,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+  }",
+901,anomaly,anomaly,True,397,2417,2814,0.000111,0.000967,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+902,anomaly,anomaly,True,321,1307,1628,0.000090,0.000523,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+903,anomaly,anomaly,True,441,543,984,0.000123,0.000217,"{""label"": ""anomaly"", ""anomaly"": true}",
+904,anomaly,,,0,0,0,0.000000,0.000000,error: Provider returned error,Provider returned error
+905,anomaly,anomaly,True,641,934,1575,0.000179,0.000374,"{""label"": ""anomaly"", ""anomaly"": true}",
+906,anomaly,anomaly,True,441,4620,5061,0.000123,0.001848,"{""label"": ""anomaly"", ""anomaly"": true}",
+907,anomaly,anomaly,True,441,867,1308,0.000123,0.000347,"{""label"": ""anomaly"", ""anomaly"": true}",
+908,anomaly,anomaly,True,645,365,1010,0.000181,0.000146,"{""label"": ""anomaly"", ""anomaly"": true}",
+909,anomaly,anomaly,True,649,667,1316,0.000182,0.000267,"{""label"": ""anomaly"", ""anomaly"": true}",
+910,anomaly,anomaly,True,373,1625,1998,0.000104,0.000650,"{""label"": ""anomaly"", ""anomaly"": true}",
+911,anomaly,anomaly,True,373,1248,1621,0.000104,0.000499,"{""label"": ""anomaly"", ""anomaly"": true}",
+912,anomaly,anomaly,True,441,1069,1510,0.000123,0.000428,"{""label"": ""anomaly"", ""anomaly"": true}",
+913,anomaly,anomaly,True,1249,1821,3070,0.000350,0.000728,"{""label"": ""anomaly"", ""anomaly"": true}",
+914,anomaly,anomaly,True,441,1891,2332,0.000123,0.000756,"{""label"": ""anomaly"", ""anomaly"": true}",
+915,anomaly,anomaly,True,421,4110,4531,0.000118,0.001644,"{""label"": ""anomaly"", ""anomaly"": true}",
+916,anomaly,anomaly,True,397,1688,2085,0.000111,0.000675,"{""label"": ""anomaly"", ""anomaly"": true}",
+917,anomaly,anomaly,True,1225,1343,2568,0.000343,0.000537,"{""label"": ""anomaly"", ""anomaly"": true}",
+918,anomaly,anomaly,True,441,910,1351,0.000123,0.000364,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+919,anomaly,anomaly,True,441,7854,8295,0.000123,0.003142,"{""label"":""anomaly"", ""anomaly"":true}",
+920,anomaly,anomaly,True,441,5984,6425,0.000123,0.002394,"{""label"": ""anomaly"", ""anomaly"": true}",
+921,anomaly,anomaly,True,7258,529,7787,0.002032,0.000212,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+922,anomaly,anomaly,True,333,1903,2236,0.000093,0.000761,"{""label"": ""anomaly"", ""anomaly"": true}",
+923,anomaly,anomaly,True,453,1919,2372,0.000127,0.000768,"{""label"": ""anomaly"", ""anomaly"": true}",
+924,anomaly,anomaly,True,441,3297,3738,0.000123,0.001319,"{""label"": ""anomaly"", ""anomaly"": true}",
+925,anomaly,normal,False,441,2010,2451,0.000123,0.000804,"{""label"": ""normal"", ""anomaly"": false}",
+926,anomaly,anomaly,True,373,858,1231,0.000104,0.000343,"{""label"": ""anomaly"", ""anomaly"": true}",
+927,anomaly,anomaly,True,441,1446,1887,0.000123,0.000578,"{ ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+928,anomaly,anomaly,True,441,2290,2731,0.000123,0.000916,"{
+  ""label"": ""anomaly"",  ""anomaly"": true
+}",
+929,anomaly,anomaly,True,569,1304,1873,0.000159,0.000522,"{""label"": ""anomaly"", ""anomaly"": true}",
+930,anomaly,anomaly,True,429,4625,5054,0.000120,0.001850,"{""label"": ""anomaly"", ""anomaly"": true}",
+931,anomaly,anomaly,True,381,1409,1790,0.000107,0.000564,"{""label"": ""anomaly"", ""anomaly"": true}",
+932,anomaly,anomaly,True,333,1435,1768,0.000093,0.000574,"{""label"": ""anomaly"", ""anomaly"": true}",
+933,anomaly,anomaly,True,417,358,775,0.000117,0.000143,"{""label"": ""anomaly"", ""anomaly"": true}",
+934,anomaly,anomaly,True,429,914,1343,0.000120,0.000366,"{""label"": ""anomaly"", ""anomaly"": true}",
+935,anomaly,anomaly,True,429,1099,1528,0.000120,0.000440,"{""label"": ""anomaly"", ""anomaly"": true}",
+936,anomaly,anomaly,True,349,5061,5410,0.000098,0.002024,"{""label"": ""anomaly"", ""anomaly"": true}",
+937,anomaly,anomaly,True,429,1227,1656,0.000120,0.000491,"{""label"": ""anomaly"", ""anomaly"": true}",
+938,anomaly,anomaly,True,581,835,1416,0.000163,0.000334,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+939,anomaly,anomaly,True,429,695,1124,0.000120,0.000278,"{""label"": ""anomaly"", ""anomaly"": true}",
+940,anomaly,anomaly,True,429,1288,1717,0.000120,0.000515,"{""label"": ""anomaly"", ""anomaly"": true}",
+941,anomaly,anomaly,True,429,1137,1566,0.000120,0.000455,"{""label"": ""anomaly"", ""anomaly"": true}",
+942,anomaly,anomaly,True,409,2320,2729,0.000115,0.000928,"{""label"": ""anomaly"", ""anomaly"": true}",
+943,anomaly,anomaly,True,5968,685,6653,0.001671,0.000274,"{""label"": ""anomaly"", ""anomaly"": true}",
+944,anomaly,anomaly,True,429,4978,5407,0.000120,0.001991,"{""label"": ""anomaly"", ""anomaly"": true}",
+945,anomaly,anomaly,True,377,715,1092,0.000106,0.000286,"{""label"": ""anomaly"", ""anomaly"": true}",
+946,anomaly,anomaly,True,1201,333,1534,0.000336,0.000133,"{""label"": ""anomaly"", ""anomaly"": true}",
+947,anomaly,anomaly,True,285,1927,2212,0.000080,0.000771,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+948,anomaly,anomaly,True,417,4168,4585,0.000117,0.001667,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+949,anomaly,anomaly,True,417,1659,2076,0.000117,0.000664,"{
+  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+950,anomaly,anomaly,True,609,4151,4760,0.000171,0.001660,"{""label"": ""anomaly"", ""anomaly"": true}",
+951,anomaly,anomaly,True,2663,446,3109,0.000746,0.000178,"{  ""label"": ""anomaly"",
+  ""anomaly"": true
+}",
+952,anomaly,anomaly,True,429,1222,1651,0.000120,0.000489,"{""label"": ""anomaly"", ""anomaly"": true}",
+953,anomaly,anomaly,True,417,3655,4072,0.000117,0.001462,"{""label"": ""anomaly"", ""anomaly"": true}",
+954,anomaly,anomaly,True,417,7180,7597,0.000117,0.002872,"{""label"": ""anomaly"", ""anomaly"": true}",
+955,anomaly,anomaly,True,369,3745,4114,0.000103,0.001498,"{""label"": ""anomaly"", ""anomaly"": true}",
+956,anomaly,normal,False,429,12799,13228,0.000120,0.005120,"{""label"": ""normal"", ""anomaly"": false}",
+957,anomaly,anomaly,True,1177,496,1673,0.000330,0.000198,"{""label"": ""anomaly"", ""anomaly"": true}",
+958,anomaly,anomaly,True,417,1954,2371,0.000117,0.000782,"{""label"": ""anomaly"", ""anomaly"": true}",
+959,anomaly,anomaly,True,417,1007,1424,0.000117,0.000403,"{""label"": ""anomaly"", ""anomaly"": true}",
+960,anomaly,anomaly,True,417,1929,2346,0.000117,0.000772,"{""label"": ""anomaly"", ""anomaly"": true}",
