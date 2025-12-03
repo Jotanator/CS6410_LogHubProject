@@ -1,0 +1,20 @@
+{
+  "dataset": "adfa",
+  "n_test": 5898,
+  "n_test_normal": 5152,
+  "n_test_anomaly": 746,
+  "tp": 682,
+  "fp": 4945,
+  "tn": 113,
+  "fn": 31,
+  "precision": 0.1212013506308868,
+  "recall": 0.9565217391304348,
+  "f1": 0.21514195583596216,
+  "accuracy": 0.1377577542886848,
+  "prompt_tokens": 9328175,
+  "completion_tokens": 25265063,
+  "total_cost_usd": 12.717914200000026,
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+  "notes": "zero-shot, per-sequence classification based on event ID sequences",
+  "skipped": 127
+}
