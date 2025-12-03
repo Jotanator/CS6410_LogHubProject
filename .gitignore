@@ -1,0 +1,15 @@
+.DS_Store
+env/
+__pycache__/
+*.pyc
+.venv/
+
+# Results and logs
+results/logs/
+results/predictions/
+results/metrics/
+
+# Local data downloads (submodule handled separately)
+data/anomaly-detection-log-datasets/**
+!data/anomaly-detection-log-datasets
+!data/anomaly-detection-log-datasets/.git

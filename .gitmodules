@@ -1,0 +1,3 @@
+[submodule "data/anomaly-detection-log-datasets"]
+	path = data/anomaly-detection-log-datasets
+	url = https://github.com/ait-aecid/anomaly-detection-log-datasets.git
